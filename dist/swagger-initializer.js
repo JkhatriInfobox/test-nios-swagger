@@ -5,9 +5,10 @@ window.onload = function() {
   window.ui = SwaggerUIBundle({
     url: "/nios-swagger/dns.json",
     urls: [
-      {url: "/nios-swagger/dns.json", name: "DNS"},
-      {url: "/nios-swagger/dhcp.json", name: "DHCP"},
-      {url: "/nios-swagger/dtc.json", name: "DTC"},
+      {url: "nios-swagger/dns.json", name: "DNS"},
+      {url: "nios-swagger/dhcp.json", name: "DHCP"},
+      {url: "nios-swagger/dtc.json", name: "DTC"},
+      {url: "nios-swagger/ipam.json", name: "IPAM"},
     ],
     dom_id: '#swagger-ui',
     deepLinking: true,
