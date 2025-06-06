@@ -1,0 +1,726 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Infoblox EXTATTRIBUTES API",
+        "description": "OpenAPI specification for Infoblox NIOS WAPI EXTATTRIBUTES objects",
+        "version": "2.13.6",
+        "termsOfService": "https://www.infoblox.com",
+        "contact": {
+            "name": "Infoblox",
+            "url": "https://www.infoblox.com"
+        },
+        "license": {
+            "name": "Infoblox License",
+            "url": "https://www.infoblox.com"
+        }
+    },
+    "servers": [
+        {
+            "url": "/wapi/v2.13.6",
+            "description": "NIOS WAPI server"
+        }
+    ],
+    "tags": [
+        {
+            "name": "extensibleattributedef",
+            "description": "Operations for extensibleattributedef objects"
+        }
+    ],
+    "paths": {
+        "/extensibleattributedef": {
+            "get": {
+                "tags": [
+                    "extensibleattributedef"
+                ],
+                "summary": "Retrieve extensibleattributedef objects",
+                "description": "Returns a list of extensibleattributedef objects matching the search criteria",
+                "parameters": [
+                    {
+                        "$ref": "#/components/parameters/ReturnFields"
+                    },
+                    {
+                        "$ref": "#/components/parameters/ReturnFieldsPlus"
+                    },
+                    {
+                        "$ref": "#/components/parameters/MaxResults"
+                    },
+                    {
+                        "$ref": "#/components/parameters/ReturnAsObject"
+                    },
+                    {
+                        "$ref": "#/components/parameters/Paging"
+                    },
+                    {
+                        "$ref": "#/components/parameters/PageId"
+                    },
+                    {
+                        "$ref": "#/components/parameters/filters"
+                    },
+                    {
+                        "$ref": "#/components/parameters/ExtAttrFilters"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ListExtensibleattributedefResponse"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    },
+                    "404": {
+                        "description": "Not found"
+                    }
+                },
+                "security": [
+                    {
+                        "basicAuth": []
+                    }
+                ]
+            },
+            "post": {
+                "tags": [
+                    "extensibleattributedef"
+                ],
+                "summary": "Create a extensibleattributedef object",
+                "description": "Creates a new extensibleattributedef object",
+                "parameters": [
+                    {
+                        "$ref": "#/components/parameters/ReturnFields"
+                    },
+                    {
+                        "$ref": "#/components/parameters/ReturnFieldsPlus"
+                    },
+                    {
+                        "$ref": "#/components/parameters/ReturnAsObject"
+                    }
+                ],
+                "requestBody": {
+                    "description": "Object data to create",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Extensibleattributedef"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Object created successfully",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/CreateExtensibleattributedefResponse"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "basicAuth": []
+                    }
+                ],
+                "x-tf-resource": "nios_extAttributes_extensibleattributedef",
+                "x-tf-datasource": "nios_extAttributes_extensibleattributedef"
+            }
+        },
+        "/extensibleattributedef/{reference}": {
+            "get": {
+                "tags": [
+                    "extensibleattributedef"
+                ],
+                "summary": "Get a specific extensibleattributedef object",
+                "description": "Returns a specific extensibleattributedef object by reference",
+                "parameters": [
+                    {
+                        "name": "reference",
+                        "in": "path",
+                        "description": "Reference of the extensibleattributedef object",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "$ref": "#/components/parameters/ReturnFields"
+                    },
+                    {
+                        "$ref": "#/components/parameters/ReturnFieldsPlus"
+                    },
+                    {
+                        "$ref": "#/components/parameters/ReturnAsObject"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetExtensibleattributedefResponse"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    },
+                    "404": {
+                        "description": "Not found"
+                    }
+                },
+                "security": [
+                    {
+                        "basicAuth": []
+                    }
+                ]
+            },
+            "put": {
+                "tags": [
+                    "extensibleattributedef"
+                ],
+                "summary": "Update a extensibleattributedef object",
+                "description": "Updates a specific extensibleattributedef object by reference",
+                "parameters": [
+                    {
+                        "name": "reference",
+                        "in": "path",
+                        "description": "Reference of the extensibleattributedef object",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "$ref": "#/components/parameters/ReturnFields"
+                    },
+                    {
+                        "$ref": "#/components/parameters/ReturnFieldsPlus"
+                    },
+                    {
+                        "$ref": "#/components/parameters/ReturnAsObject"
+                    }
+                ],
+                "requestBody": {
+                    "description": "Object data to update",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Extensibleattributedef"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Object updated successfully",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/UpdateExtensibleattributedefResponse"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    },
+                    "404": {
+                        "description": "Not found"
+                    }
+                },
+                "security": [
+                    {
+                        "basicAuth": []
+                    }
+                ]
+            },
+            "delete": {
+                "tags": [
+                    "extensibleattributedef"
+                ],
+                "summary": "Delete a extensibleattributedef object",
+                "description": "Deletes a specific extensibleattributedef object by reference",
+                "parameters": [
+                    {
+                        "name": "reference",
+                        "in": "path",
+                        "description": "Reference of the extensibleattributedef object",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Object deleted successfully"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    },
+                    "404": {
+                        "description": "Not found"
+                    }
+                },
+                "security": [
+                    {
+                        "basicAuth": []
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "securitySchemes": {
+            "basicAuth": {
+                "type": "http",
+                "scheme": "basic"
+            }
+        },
+        "parameters": {
+            "ReturnFields": {
+                "name": "_return_fields",
+                "in": "query",
+                "description": "Enter the field names followed by comma",
+                "required": false,
+                "schema": {
+                    "type": "string"
+                }
+            },
+            "ReturnFieldsPlus": {
+                "name": "_return_fields+",
+                "in": "query",
+                "description": "Enter the field names followed by comma, this returns the required fields along with the default fields",
+                "required": false,
+                "schema": {
+                    "type": "string"
+                }
+            },
+            "MaxResults": {
+                "name": "_max_results",
+                "in": "query",
+                "description": "Enter the number of results to be fetched",
+                "required": false,
+                "schema": {
+                    "type": "integer",
+                    "format": "int32",
+                    "minimum": 1
+                }
+            },
+            "ReturnAsObject": {
+                "name": "_return_as_object",
+                "in": "query",
+                "description": "Select 1 if result is required as an object",
+                "required": false,
+                "schema": {
+                    "type": "integer",
+                    "enum": [
+                        0,
+                        1
+                    ]
+                }
+            },
+            "Paging": {
+                "name": "_paging",
+                "in": "query",
+                "description": "Control paging of results",
+                "required": false,
+                "schema": {
+                    "type": "integer",
+                    "enum": [
+                        0,
+                        1
+                    ]
+                }
+            },
+            "PageId": {
+                "name": "_page_id",
+                "in": "query",
+                "description": "Page id for retrieving next page of results",
+                "required": false,
+                "schema": {
+                    "type": "string"
+                }
+            },
+            "ProxySearch": {
+                "name": "_proxy_search",
+                "in": "query",
+                "description": "Search Grid members for data",
+                "required": false,
+                "schema": {
+                    "type": "string"
+                }
+            },
+            "Schema": {
+                "name": "_schema",
+                "in": "query",
+                "description": "Return schema for this object type",
+                "required": false,
+                "schema": {
+                    "type": "integer",
+                    "enum": [
+                        0,
+                        1
+                    ]
+                }
+            },
+            "SchemaVersion": {
+                "name": "_schema_version",
+                "in": "query",
+                "description": "Schema version to use",
+                "required": false,
+                "schema": {
+                    "type": "integer",
+                    "enum": [
+                        1,
+                        2
+                    ]
+                }
+            },
+            "GetDoc": {
+                "name": "_get_doc",
+                "in": "query",
+                "description": "Return documentation with schema",
+                "required": false,
+                "schema": {
+                    "type": "integer",
+                    "enum": [
+                        0,
+                        1
+                    ]
+                }
+            },
+            "SchemaSearchable": {
+                "name": "_schema_searchable",
+                "in": "query",
+                "description": "Return searchable fields with schema",
+                "required": false,
+                "schema": {
+                    "type": "integer",
+                    "enum": [
+                        0,
+                        1
+                    ]
+                }
+            },
+            "Inheritance": {
+                "name": "_inheritance",
+                "in": "query",
+                "description": "If this option is set to True, fields which support inheritance, will display data properly.",
+                "required": false,
+                "schema": {
+                    "type": "boolean"
+                }
+            },
+            "filters": {
+                "name": "filters",
+                "in": "query",
+                "schema": {
+                    "type": "object",
+                    "additionalProperties": true
+                },
+                "style": "form",
+                "explode": false
+            },
+            "ExtAttrFilters": {
+                "name": "extattrfilter",
+                "in": "query",
+                "schema": {
+                    "type": "object",
+                    "additionalProperties": true
+                },
+                "style": "form",
+                "explode": false
+            },
+            "Method": {
+                "name": "_method",
+                "in": "query",
+                "description": "Enter the method type for the request",
+                "required": false,
+                "schema": {
+                    "type": "string"
+                }
+            },
+            "Body": {
+                "name": "body",
+                "in": "query",
+                "schema": {
+                    "type": "object"
+                }
+            }
+        },
+        "schemas": {
+            "ExtAttrs": {
+                "type": "object",
+                "properties": {
+                    "value": {
+                        "description": "The value of the extensible attribute."
+                    }
+                },
+                "required": [
+                    "value"
+                ],
+                "description": "Extensible attributes associated with the object."
+            },
+            "Extensibleattributedef": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "_ref": {
+                        "type": "string",
+                        "description": "The reference to the object."
+                    },
+                    "allowed_object_types": {
+                        "type": "array",
+                        "description": "The object types this extensible attribute is allowed to associate with.",
+                        "enum": [
+                            "string"
+                        ],
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "comment": {
+                        "type": "string",
+                        "description": "Comment for the Extensible Attribute Definition; maximum 256 characters.",
+                        "example": "Example comment"
+                    },
+                    "default_value": {
+                        "type": "string",
+                        "description": "Default value used to pre-populate the attribute value in the GUI. For email, URL, and string types, the value is a string with a maximum of 256 characters. For an integer, the value is an integer from -2147483648 through 2147483647. For a date, the value is the number of seconds that have elapsed since January 1st, 1970 UTC.",
+                        "example": "Example default_value"
+                    },
+                    "descendants_action": {
+                        "$ref": "#/components/schemas/ExtensibleattributedefDescendantsAction"
+                    },
+                    "flags": {
+                        "type": "string",
+                        "description": "This field contains extensible attribute flags. Possible values: (A)udited, (C)loud API, Cloud (G)master, (I)nheritable, (L)isted, (M)andatory value, MGM (P)rivate, (R)ead Only, (S)ort enum values, Multiple (V)alues If there are two or more flags in the field, you must list them according to the order they are listed above. For example, 'CR' is a valid value for the 'flags' field because C = Cloud API is listed before R = Read only. However, the value 'RC' is invalid because the order for the 'flags' field is broken.",
+                        "example": "Example flags"
+                    },
+                    "list_values": {
+                        "type": "array",
+                        "description": "List of Values. Applicable if the extensible attribute type is ENUM.",
+                        "enum": [
+                            "extensibleattributedef:listvalues"
+                        ],
+                        "items": {
+                            "$ref": "#/components/schemas/ExtensibleattributedefListValues"
+                        }
+                    },
+                    "max": {
+                        "type": "integer",
+                        "description": "Maximum allowed value of extensible attribute. Applicable if the extensible attribute type is INTEGER.",
+                        "format": "int64",
+                        "example": 1
+                    },
+                    "min": {
+                        "type": "integer",
+                        "description": "Minimum allowed value of extensible attribute. Applicable if the extensible attribute type is INTEGER.",
+                        "format": "int64",
+                        "example": 1
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "The name of the Extensible Attribute Definition.",
+                        "example": "Example name"
+                    },
+                    "namespace": {
+                        "type": "string",
+                        "description": "Namespace for the Extensible Attribute Definition.",
+                        "enum": [
+                            "CLOUD",
+                            "CLOUD_GM",
+                            "MSADSITES",
+                            "RIPE",
+                            "default"
+                        ],
+                        "readOnly": true,
+                        "example": "Example namespace"
+                    },
+                    "type": {
+                        "type": "string",
+                        "description": "Type for the Extensible Attribute Definition.",
+                        "enum": [
+                            "STRING",
+                            "INTEGER",
+                            "EMAIL",
+                            "DATE",
+                            "ENUM",
+                            "URL"
+                        ],
+                        "example": "Example type"
+                    }
+                }
+            },
+            "ExtensibleattributedefDescendantsAction": {
+                "type": "object",
+                "properties": {
+                    "option_with_ea": {
+                        "type": "string",
+                        "description": "This option describes which action must be taken if the extensible attribute exists for both the parent and descendant objects: * INHERIT: inherit the extensible attribute from the parent object. * RETAIN: retain the value of an extensible attribute that was set for the child object. * CONVERT: the value of the extensible attribute must be copied from the parent object.",
+                        "enum": [
+                            "RETAIN",
+                            "CONVERT",
+                            "INHERIT"
+                        ],
+                        "example": "Example option_with_ea"
+                    },
+                    "option_without_ea": {
+                        "type": "string",
+                        "description": "This option describes which action must be taken if the extensible attribute exists for the parent, but is absent from the descendant object: * INHERIT: inherit the extensible attribute from the parent object. * NOT_INHERIT: do nothing.",
+                        "enum": [
+                            "INHERIT",
+                            "NOT_INHERIT"
+                        ],
+                        "example": "Example option_without_ea"
+                    },
+                    "option_delete_ea": {
+                        "type": "string",
+                        "description": "This option describes which action must be taken if the extensible attribute exists for the descendant, but is absent for the parent object: * RETAIN: retain the extensible attribute value for the descendant object. * REMOVE: remove this extensible attribute from the descendant object.",
+                        "enum": [
+                            "RETAIN",
+                            "REMOVE"
+                        ],
+                        "example": "Example option_delete_ea"
+                    }
+                }
+            },
+            "ExtensibleattributedefListValues": {
+                "type": "object",
+                "properties": {
+                    "value": {
+                        "type": "string",
+                        "description": "Enum value",
+                        "example": "Example value"
+                    }
+                }
+            },
+            "ListExtensibleattributedefResponse": {
+                "oneOf": [
+                    {
+                        "description": "The response format to retrieve __Extensibleattributedef__ objects.",
+                        "type": "array",
+                        "title": "ListExtensibleattributedefResponseArray",
+                        "items": {
+                            "$ref": "#/components/schemas/Extensibleattributedef"
+                        }
+                    },
+                    {
+                        "description": "The response format to retrieve __Extensibleattributedef__ objects.",
+                        "type": "object",
+                        "title": "ListExtensibleattributedefResponseObject",
+                        "properties": {
+                            "result": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "#/components/schemas/Extensibleattributedef"
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            "CreateExtensibleattributedefResponse": {
+                "oneOf": [
+                    {
+                        "description": "The response format to create __Extensibleattributedef__ in object format.",
+                        "type": "object",
+                        "title": "CreateExtensibleattributedefResponseAsObject",
+                        "properties": {
+                            "result": {
+                                "$ref": "#/components/schemas/Extensibleattributedef"
+                            }
+                        }
+                    },
+                    {
+                        "description": "The response format to create __Extensibleattributedef__.",
+                        "type": "string",
+                        "title": "CreateExtensibleattributedefResponse"
+                    }
+                ]
+            },
+            "GetExtensibleattributedefResponse": {
+                "oneOf": [
+                    {
+                        "$ref": "#/components/schemas/Extensibleattributedef"
+                    },
+                    {
+                        "description": "The response format to retrieve __Extensibleattributedef__ objects.",
+                        "type": "object",
+                        "additionalProperties": false,
+                        "title": "GetExtensibleattributedefResponseObjectAsResult",
+                        "properties": {
+                            "result": {
+                                "$ref": "#/components/schemas/Extensibleattributedef"
+                            }
+                        }
+                    }
+                ]
+            },
+            "UpdateExtensibleattributedefResponse": {
+                "oneOf": [
+                    {
+                        "description": "The response format to update __Extensibleattributedef__ in object format.",
+                        "type": "object",
+                        "title": "UpdateExtensibleattributedefResponseAsObject",
+                        "properties": {
+                            "result": {
+                                "$ref": "#/components/schemas/Extensibleattributedef"
+                            }
+                        }
+                    },
+                    {
+                        "description": "The response format to update __Extensibleattributedef__ .",
+                        "type": "string",
+                        "title": "UpdateExtensibleattributedefResponse"
+                    }
+                ]
+            }
+        }
+    }
+}
