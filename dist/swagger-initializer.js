@@ -3,7 +3,12 @@ window.onload = function() {
 
   // the following lines will be replaced by docker/configurator, when it runs in a docker-container
   window.ui = SwaggerUIBundle({
-    url: "../nios-swagger/*.json",
+    url: "/nios-swagger/dns.json",
+    urls: [
+      {url: "/nios-swagger/dns.json", name: "DNS"},
+      {url: "/nios-swagger/dhcp.json", name: "DHCP"},
+      {url: "/nios-swagger/dtc.json", name: "DTC"},
+    ],
     dom_id: '#swagger-ui',
     deepLinking: true,
     presets: [
