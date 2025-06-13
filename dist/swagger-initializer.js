@@ -3,7 +3,7 @@ window.onload = function() {
 
   // the following lines will be replaced by docker/configurator, when it runs in a docker-container
   window.ui = SwaggerUIBundle({
-    url: "/nios-swagger/json/dns.json",
+    url: "nios-swagger/json/dns.json",
     urls: [
       {url: "nios-swagger/json/acl.json", name: "ACL"},
       {url: "nios-swagger/json/cloud.json", name: "Cloud"},
