@@ -22,91 +22,91 @@
     ],
     "tags": [
         {
-            "name": "dtc",
+            "name": "Dtc",
             "description": "Operations for dtc objects"
         },
         {
-            "name": "dtc_server",
+            "name": "DtcServer",
             "description": "Operations for dtc:server objects"
         },
         {
-            "name": "dtc_pool",
+            "name": "DtcPool",
             "description": "Operations for dtc:pool objects"
         },
         {
-            "name": "dtc_topology",
+            "name": "DtcTopology",
             "description": "Operations for dtc:topology objects"
         },
         {
-            "name": "dtc_lbdn",
+            "name": "DtcLbdn",
             "description": "Operations for dtc:lbdn objects"
         },
         {
-            "name": "dtc_monitor",
+            "name": "DtcMonitor",
             "description": "Operations for dtc:monitor objects"
         },
         {
-            "name": "dtc_monitor_http",
+            "name": "DtcMonitorHttp",
             "description": "Operations for dtc:monitor:http objects"
         },
         {
-            "name": "dtc_monitor_icmp",
+            "name": "DtcMonitorIcmp",
             "description": "Operations for dtc:monitor:icmp objects"
         },
         {
-            "name": "dtc_monitor_pdp",
+            "name": "DtcMonitorPdp",
             "description": "Operations for dtc:monitor:pdp objects"
         },
         {
-            "name": "dtc_monitor_sip",
+            "name": "DtcMonitorSip",
             "description": "Operations for dtc:monitor:sip objects"
         },
         {
-            "name": "dtc_monitor_snmp",
+            "name": "DtcMonitorSnmp",
             "description": "Operations for dtc:monitor:snmp objects"
         },
         {
-            "name": "dtc_monitor_tcp",
+            "name": "DtcMonitorTcp",
             "description": "Operations for dtc:monitor:tcp objects"
         },
         {
-            "name": "dtc_record_a",
+            "name": "DtcRecordA",
             "description": "Operations for dtc:record:a objects"
         },
         {
-            "name": "dtc_record_aaaa",
+            "name": "DtcRecordAaaa",
             "description": "Operations for dtc:record:aaaa objects"
         },
         {
-            "name": "dtc_record_cname",
+            "name": "DtcRecordCname",
             "description": "Operations for dtc:record:cname objects"
         },
         {
-            "name": "dtc_record_naptr",
+            "name": "DtcRecordNaptr",
             "description": "Operations for dtc:record:naptr objects"
         },
         {
-            "name": "dtc_record_srv",
+            "name": "DtcRecordSrv",
             "description": "Operations for dtc:record:srv objects"
         },
         {
-            "name": "dtc_certificate",
+            "name": "DtcCertificate",
             "description": "Operations for dtc:certificate objects"
         },
         {
-            "name": "dtc_allrecords",
+            "name": "DtcAllrecords",
             "description": "Operations for dtc:allrecords objects"
         },
         {
-            "name": "dtc_object",
+            "name": "DtcObject",
             "description": "Operations for dtc:object objects"
         },
         {
-            "name": "dtc_topology_rule",
+            "name": "DtcTopologyRule",
             "description": "Operations for dtc:topology:rule objects"
         },
         {
-            "name": "dtc_topology_label",
+            "name": "DtcTopologyLabel",
             "description": "Operations for dtc:topology:label objects"
         }
     ],
@@ -114,8 +114,9 @@
         "/dtc": {
             "get": {
                 "tags": [
-                    "dtc"
+                    "Dtc"
                 ],
+                "operationId": "DtcList",
                 "summary": "Retrieve dtc objects",
                 "description": "Returns a list of dtc objects matching the search criteria",
                 "parameters": [
@@ -178,8 +179,9 @@
         "/dtc/{reference}": {
             "get": {
                 "tags": [
-                    "dtc"
+                    "Dtc"
                 ],
+                "operationId": "DtcRead",
                 "summary": "Get a specific dtc object",
                 "description": "Returns a specific dtc object by reference",
                 "parameters": [
@@ -236,8 +238,9 @@
         "/dtc:server": {
             "get": {
                 "tags": [
-                    "dtc_server"
+                    "DtcServer"
                 ],
+                "operationId": "DtcServerList",
                 "summary": "Retrieve dtc:server objects",
                 "description": "Returns a list of dtc:server objects matching the search criteria",
                 "parameters": [
@@ -298,8 +301,9 @@
             },
             "post": {
                 "tags": [
-                    "dtc_server"
+                    "DtcServer"
                 ],
+                "operationId": "DtcServerCreate",
                 "summary": "Create a dtc:server object",
                 "description": "Creates a new dtc:server object",
                 "parameters": [
@@ -358,8 +362,9 @@
         "/dtc:server/{reference}": {
             "get": {
                 "tags": [
-                    "dtc_server"
+                    "DtcServer"
                 ],
+                "operationId": "DtcServerRead",
                 "summary": "Get a specific dtc:server object",
                 "description": "Returns a specific dtc:server object by reference",
                 "parameters": [
@@ -414,8 +419,9 @@
             },
             "put": {
                 "tags": [
-                    "dtc_server"
+                    "DtcServer"
                 ],
+                "operationId": "DtcServerUpdate",
                 "summary": "Update a dtc:server object",
                 "description": "Updates a specific dtc:server object by reference",
                 "parameters": [
@@ -482,8 +488,9 @@
             },
             "delete": {
                 "tags": [
-                    "dtc_server"
+                    "DtcServer"
                 ],
+                "operationId": "DtcServerDelete",
                 "summary": "Delete a dtc:server object",
                 "description": "Deletes a specific dtc:server object by reference",
                 "parameters": [
@@ -524,8 +531,9 @@
         "/dtc:pool": {
             "get": {
                 "tags": [
-                    "dtc_pool"
+                    "DtcPool"
                 ],
+                "operationId": "DtcPoolList",
                 "summary": "Retrieve dtc:pool objects",
                 "description": "Returns a list of dtc:pool objects matching the search criteria",
                 "parameters": [
@@ -586,8 +594,9 @@
             },
             "post": {
                 "tags": [
-                    "dtc_pool"
+                    "DtcPool"
                 ],
+                "operationId": "DtcPoolCreate",
                 "summary": "Create a dtc:pool object",
                 "description": "Creates a new dtc:pool object",
                 "parameters": [
@@ -646,8 +655,9 @@
         "/dtc:pool/{reference}": {
             "get": {
                 "tags": [
-                    "dtc_pool"
+                    "DtcPool"
                 ],
+                "operationId": "DtcPoolRead",
                 "summary": "Get a specific dtc:pool object",
                 "description": "Returns a specific dtc:pool object by reference",
                 "parameters": [
@@ -702,8 +712,9 @@
             },
             "put": {
                 "tags": [
-                    "dtc_pool"
+                    "DtcPool"
                 ],
+                "operationId": "DtcPoolUpdate",
                 "summary": "Update a dtc:pool object",
                 "description": "Updates a specific dtc:pool object by reference",
                 "parameters": [
@@ -770,8 +781,9 @@
             },
             "delete": {
                 "tags": [
-                    "dtc_pool"
+                    "DtcPool"
                 ],
+                "operationId": "DtcPoolDelete",
                 "summary": "Delete a dtc:pool object",
                 "description": "Deletes a specific dtc:pool object by reference",
                 "parameters": [
@@ -812,8 +824,9 @@
         "/dtc:topology": {
             "get": {
                 "tags": [
-                    "dtc_topology"
+                    "DtcTopology"
                 ],
+                "operationId": "DtcTopologyList",
                 "summary": "Retrieve dtc:topology objects",
                 "description": "Returns a list of dtc:topology objects matching the search criteria",
                 "parameters": [
@@ -874,8 +887,9 @@
             },
             "post": {
                 "tags": [
-                    "dtc_topology"
+                    "DtcTopology"
                 ],
+                "operationId": "DtcTopologyCreate",
                 "summary": "Create a dtc:topology object",
                 "description": "Creates a new dtc:topology object",
                 "parameters": [
@@ -934,8 +948,9 @@
         "/dtc:topology/{reference}": {
             "get": {
                 "tags": [
-                    "dtc_topology"
+                    "DtcTopology"
                 ],
+                "operationId": "DtcTopologyRead",
                 "summary": "Get a specific dtc:topology object",
                 "description": "Returns a specific dtc:topology object by reference",
                 "parameters": [
@@ -990,8 +1005,9 @@
             },
             "put": {
                 "tags": [
-                    "dtc_topology"
+                    "DtcTopology"
                 ],
+                "operationId": "DtcTopologyUpdate",
                 "summary": "Update a dtc:topology object",
                 "description": "Updates a specific dtc:topology object by reference",
                 "parameters": [
@@ -1058,8 +1074,9 @@
             },
             "delete": {
                 "tags": [
-                    "dtc_topology"
+                    "DtcTopology"
                 ],
+                "operationId": "DtcTopologyDelete",
                 "summary": "Delete a dtc:topology object",
                 "description": "Deletes a specific dtc:topology object by reference",
                 "parameters": [
@@ -1100,8 +1117,9 @@
         "/dtc:lbdn": {
             "get": {
                 "tags": [
-                    "dtc_lbdn"
+                    "DtcLbdn"
                 ],
+                "operationId": "DtcLbdnList",
                 "summary": "Retrieve dtc:lbdn objects",
                 "description": "Returns a list of dtc:lbdn objects matching the search criteria",
                 "parameters": [
@@ -1162,8 +1180,9 @@
             },
             "post": {
                 "tags": [
-                    "dtc_lbdn"
+                    "DtcLbdn"
                 ],
+                "operationId": "DtcLbdnCreate",
                 "summary": "Create a dtc:lbdn object",
                 "description": "Creates a new dtc:lbdn object",
                 "parameters": [
@@ -1222,8 +1241,9 @@
         "/dtc:lbdn/{reference}": {
             "get": {
                 "tags": [
-                    "dtc_lbdn"
+                    "DtcLbdn"
                 ],
+                "operationId": "DtcLbdnRead",
                 "summary": "Get a specific dtc:lbdn object",
                 "description": "Returns a specific dtc:lbdn object by reference",
                 "parameters": [
@@ -1278,8 +1298,9 @@
             },
             "put": {
                 "tags": [
-                    "dtc_lbdn"
+                    "DtcLbdn"
                 ],
+                "operationId": "DtcLbdnUpdate",
                 "summary": "Update a dtc:lbdn object",
                 "description": "Updates a specific dtc:lbdn object by reference",
                 "parameters": [
@@ -1346,8 +1367,9 @@
             },
             "delete": {
                 "tags": [
-                    "dtc_lbdn"
+                    "DtcLbdn"
                 ],
+                "operationId": "DtcLbdnDelete",
                 "summary": "Delete a dtc:lbdn object",
                 "description": "Deletes a specific dtc:lbdn object by reference",
                 "parameters": [
@@ -1388,8 +1410,9 @@
         "/dtc:monitor": {
             "get": {
                 "tags": [
-                    "dtc_monitor"
+                    "DtcMonitor"
                 ],
+                "operationId": "DtcMonitorList",
                 "summary": "Retrieve dtc:monitor objects",
                 "description": "Returns a list of dtc:monitor objects matching the search criteria",
                 "parameters": [
@@ -1452,8 +1475,9 @@
         "/dtc:monitor/{reference}": {
             "get": {
                 "tags": [
-                    "dtc_monitor"
+                    "DtcMonitor"
                 ],
+                "operationId": "DtcMonitorRead",
                 "summary": "Get a specific dtc:monitor object",
                 "description": "Returns a specific dtc:monitor object by reference",
                 "parameters": [
@@ -1508,8 +1532,9 @@
             },
             "put": {
                 "tags": [
-                    "dtc_monitor"
+                    "DtcMonitor"
                 ],
+                "operationId": "DtcMonitorUpdate",
                 "summary": "Update a dtc:monitor object",
                 "description": "Updates a specific dtc:monitor object by reference",
                 "parameters": [
@@ -1578,8 +1603,9 @@
         "/dtc:monitor:http": {
             "get": {
                 "tags": [
-                    "dtc_monitor_http"
+                    "DtcMonitorHttp"
                 ],
+                "operationId": "DtcMonitorHttpList",
                 "summary": "Retrieve dtc:monitor:http objects",
                 "description": "Returns a list of dtc:monitor:http objects matching the search criteria",
                 "parameters": [
@@ -1640,8 +1666,9 @@
             },
             "post": {
                 "tags": [
-                    "dtc_monitor_http"
+                    "DtcMonitorHttp"
                 ],
+                "operationId": "DtcMonitorHttpCreate",
                 "summary": "Create a dtc:monitor:http object",
                 "description": "Creates a new dtc:monitor:http object",
                 "parameters": [
@@ -1700,8 +1727,9 @@
         "/dtc:monitor:http/{reference}": {
             "get": {
                 "tags": [
-                    "dtc_monitor_http"
+                    "DtcMonitorHttp"
                 ],
+                "operationId": "DtcMonitorHttpRead",
                 "summary": "Get a specific dtc:monitor:http object",
                 "description": "Returns a specific dtc:monitor:http object by reference",
                 "parameters": [
@@ -1756,8 +1784,9 @@
             },
             "put": {
                 "tags": [
-                    "dtc_monitor_http"
+                    "DtcMonitorHttp"
                 ],
+                "operationId": "DtcMonitorHttpUpdate",
                 "summary": "Update a dtc:monitor:http object",
                 "description": "Updates a specific dtc:monitor:http object by reference",
                 "parameters": [
@@ -1824,8 +1853,9 @@
             },
             "delete": {
                 "tags": [
-                    "dtc_monitor_http"
+                    "DtcMonitorHttp"
                 ],
+                "operationId": "DtcMonitorHttpDelete",
                 "summary": "Delete a dtc:monitor:http object",
                 "description": "Deletes a specific dtc:monitor:http object by reference",
                 "parameters": [
@@ -1866,8 +1896,9 @@
         "/dtc:monitor:icmp": {
             "get": {
                 "tags": [
-                    "dtc_monitor_icmp"
+                    "DtcMonitorIcmp"
                 ],
+                "operationId": "DtcMonitorIcmpList",
                 "summary": "Retrieve dtc:monitor:icmp objects",
                 "description": "Returns a list of dtc:monitor:icmp objects matching the search criteria",
                 "parameters": [
@@ -1928,8 +1959,9 @@
             },
             "post": {
                 "tags": [
-                    "dtc_monitor_icmp"
+                    "DtcMonitorIcmp"
                 ],
+                "operationId": "DtcMonitorIcmpCreate",
                 "summary": "Create a dtc:monitor:icmp object",
                 "description": "Creates a new dtc:monitor:icmp object",
                 "parameters": [
@@ -1988,8 +2020,9 @@
         "/dtc:monitor:icmp/{reference}": {
             "get": {
                 "tags": [
-                    "dtc_monitor_icmp"
+                    "DtcMonitorIcmp"
                 ],
+                "operationId": "DtcMonitorIcmpRead",
                 "summary": "Get a specific dtc:monitor:icmp object",
                 "description": "Returns a specific dtc:monitor:icmp object by reference",
                 "parameters": [
@@ -2044,8 +2077,9 @@
             },
             "put": {
                 "tags": [
-                    "dtc_monitor_icmp"
+                    "DtcMonitorIcmp"
                 ],
+                "operationId": "DtcMonitorIcmpUpdate",
                 "summary": "Update a dtc:monitor:icmp object",
                 "description": "Updates a specific dtc:monitor:icmp object by reference",
                 "parameters": [
@@ -2112,8 +2146,9 @@
             },
             "delete": {
                 "tags": [
-                    "dtc_monitor_icmp"
+                    "DtcMonitorIcmp"
                 ],
+                "operationId": "DtcMonitorIcmpDelete",
                 "summary": "Delete a dtc:monitor:icmp object",
                 "description": "Deletes a specific dtc:monitor:icmp object by reference",
                 "parameters": [
@@ -2154,8 +2189,9 @@
         "/dtc:monitor:pdp": {
             "get": {
                 "tags": [
-                    "dtc_monitor_pdp"
+                    "DtcMonitorPdp"
                 ],
+                "operationId": "DtcMonitorPdpList",
                 "summary": "Retrieve dtc:monitor:pdp objects",
                 "description": "Returns a list of dtc:monitor:pdp objects matching the search criteria",
                 "parameters": [
@@ -2216,8 +2252,9 @@
             },
             "post": {
                 "tags": [
-                    "dtc_monitor_pdp"
+                    "DtcMonitorPdp"
                 ],
+                "operationId": "DtcMonitorPdpCreate",
                 "summary": "Create a dtc:monitor:pdp object",
                 "description": "Creates a new dtc:monitor:pdp object",
                 "parameters": [
@@ -2276,8 +2313,9 @@
         "/dtc:monitor:pdp/{reference}": {
             "get": {
                 "tags": [
-                    "dtc_monitor_pdp"
+                    "DtcMonitorPdp"
                 ],
+                "operationId": "DtcMonitorPdpRead",
                 "summary": "Get a specific dtc:monitor:pdp object",
                 "description": "Returns a specific dtc:monitor:pdp object by reference",
                 "parameters": [
@@ -2332,8 +2370,9 @@
             },
             "put": {
                 "tags": [
-                    "dtc_monitor_pdp"
+                    "DtcMonitorPdp"
                 ],
+                "operationId": "DtcMonitorPdpUpdate",
                 "summary": "Update a dtc:monitor:pdp object",
                 "description": "Updates a specific dtc:monitor:pdp object by reference",
                 "parameters": [
@@ -2400,8 +2439,9 @@
             },
             "delete": {
                 "tags": [
-                    "dtc_monitor_pdp"
+                    "DtcMonitorPdp"
                 ],
+                "operationId": "DtcMonitorPdpDelete",
                 "summary": "Delete a dtc:monitor:pdp object",
                 "description": "Deletes a specific dtc:monitor:pdp object by reference",
                 "parameters": [
@@ -2442,8 +2482,9 @@
         "/dtc:monitor:sip": {
             "get": {
                 "tags": [
-                    "dtc_monitor_sip"
+                    "DtcMonitorSip"
                 ],
+                "operationId": "DtcMonitorSipList",
                 "summary": "Retrieve dtc:monitor:sip objects",
                 "description": "Returns a list of dtc:monitor:sip objects matching the search criteria",
                 "parameters": [
@@ -2504,8 +2545,9 @@
             },
             "post": {
                 "tags": [
-                    "dtc_monitor_sip"
+                    "DtcMonitorSip"
                 ],
+                "operationId": "DtcMonitorSipCreate",
                 "summary": "Create a dtc:monitor:sip object",
                 "description": "Creates a new dtc:monitor:sip object",
                 "parameters": [
@@ -2564,8 +2606,9 @@
         "/dtc:monitor:sip/{reference}": {
             "get": {
                 "tags": [
-                    "dtc_monitor_sip"
+                    "DtcMonitorSip"
                 ],
+                "operationId": "DtcMonitorSipRead",
                 "summary": "Get a specific dtc:monitor:sip object",
                 "description": "Returns a specific dtc:monitor:sip object by reference",
                 "parameters": [
@@ -2620,8 +2663,9 @@
             },
             "put": {
                 "tags": [
-                    "dtc_monitor_sip"
+                    "DtcMonitorSip"
                 ],
+                "operationId": "DtcMonitorSipUpdate",
                 "summary": "Update a dtc:monitor:sip object",
                 "description": "Updates a specific dtc:monitor:sip object by reference",
                 "parameters": [
@@ -2688,8 +2732,9 @@
             },
             "delete": {
                 "tags": [
-                    "dtc_monitor_sip"
+                    "DtcMonitorSip"
                 ],
+                "operationId": "DtcMonitorSipDelete",
                 "summary": "Delete a dtc:monitor:sip object",
                 "description": "Deletes a specific dtc:monitor:sip object by reference",
                 "parameters": [
@@ -2730,8 +2775,9 @@
         "/dtc:monitor:snmp": {
             "get": {
                 "tags": [
-                    "dtc_monitor_snmp"
+                    "DtcMonitorSnmp"
                 ],
+                "operationId": "DtcMonitorSnmpList",
                 "summary": "Retrieve dtc:monitor:snmp objects",
                 "description": "Returns a list of dtc:monitor:snmp objects matching the search criteria",
                 "parameters": [
@@ -2792,8 +2838,9 @@
             },
             "post": {
                 "tags": [
-                    "dtc_monitor_snmp"
+                    "DtcMonitorSnmp"
                 ],
+                "operationId": "DtcMonitorSnmpCreate",
                 "summary": "Create a dtc:monitor:snmp object",
                 "description": "Creates a new dtc:monitor:snmp object",
                 "parameters": [
@@ -2852,8 +2899,9 @@
         "/dtc:monitor:snmp/{reference}": {
             "get": {
                 "tags": [
-                    "dtc_monitor_snmp"
+                    "DtcMonitorSnmp"
                 ],
+                "operationId": "DtcMonitorSnmpRead",
                 "summary": "Get a specific dtc:monitor:snmp object",
                 "description": "Returns a specific dtc:monitor:snmp object by reference",
                 "parameters": [
@@ -2908,8 +2956,9 @@
             },
             "put": {
                 "tags": [
-                    "dtc_monitor_snmp"
+                    "DtcMonitorSnmp"
                 ],
+                "operationId": "DtcMonitorSnmpUpdate",
                 "summary": "Update a dtc:monitor:snmp object",
                 "description": "Updates a specific dtc:monitor:snmp object by reference",
                 "parameters": [
@@ -2976,8 +3025,9 @@
             },
             "delete": {
                 "tags": [
-                    "dtc_monitor_snmp"
+                    "DtcMonitorSnmp"
                 ],
+                "operationId": "DtcMonitorSnmpDelete",
                 "summary": "Delete a dtc:monitor:snmp object",
                 "description": "Deletes a specific dtc:monitor:snmp object by reference",
                 "parameters": [
@@ -3018,8 +3068,9 @@
         "/dtc:monitor:tcp": {
             "get": {
                 "tags": [
-                    "dtc_monitor_tcp"
+                    "DtcMonitorTcp"
                 ],
+                "operationId": "DtcMonitorTcpList",
                 "summary": "Retrieve dtc:monitor:tcp objects",
                 "description": "Returns a list of dtc:monitor:tcp objects matching the search criteria",
                 "parameters": [
@@ -3080,8 +3131,9 @@
             },
             "post": {
                 "tags": [
-                    "dtc_monitor_tcp"
+                    "DtcMonitorTcp"
                 ],
+                "operationId": "DtcMonitorTcpCreate",
                 "summary": "Create a dtc:monitor:tcp object",
                 "description": "Creates a new dtc:monitor:tcp object",
                 "parameters": [
@@ -3140,8 +3192,9 @@
         "/dtc:monitor:tcp/{reference}": {
             "get": {
                 "tags": [
-                    "dtc_monitor_tcp"
+                    "DtcMonitorTcp"
                 ],
+                "operationId": "DtcMonitorTcpRead",
                 "summary": "Get a specific dtc:monitor:tcp object",
                 "description": "Returns a specific dtc:monitor:tcp object by reference",
                 "parameters": [
@@ -3196,8 +3249,9 @@
             },
             "put": {
                 "tags": [
-                    "dtc_monitor_tcp"
+                    "DtcMonitorTcp"
                 ],
+                "operationId": "DtcMonitorTcpUpdate",
                 "summary": "Update a dtc:monitor:tcp object",
                 "description": "Updates a specific dtc:monitor:tcp object by reference",
                 "parameters": [
@@ -3264,8 +3318,9 @@
             },
             "delete": {
                 "tags": [
-                    "dtc_monitor_tcp"
+                    "DtcMonitorTcp"
                 ],
+                "operationId": "DtcMonitorTcpDelete",
                 "summary": "Delete a dtc:monitor:tcp object",
                 "description": "Deletes a specific dtc:monitor:tcp object by reference",
                 "parameters": [
@@ -3306,8 +3361,9 @@
         "/dtc:record:a": {
             "get": {
                 "tags": [
-                    "dtc_record_a"
+                    "DtcRecordA"
                 ],
+                "operationId": "DtcRecordAList",
                 "summary": "Retrieve dtc:record:a objects",
                 "description": "Returns a list of dtc:record:a objects matching the search criteria",
                 "parameters": [
@@ -3368,8 +3424,9 @@
             },
             "post": {
                 "tags": [
-                    "dtc_record_a"
+                    "DtcRecordA"
                 ],
+                "operationId": "DtcRecordACreate",
                 "summary": "Create a dtc:record:a object",
                 "description": "Creates a new dtc:record:a object",
                 "parameters": [
@@ -3427,8 +3484,9 @@
         "/dtc:record:a/{reference}": {
             "get": {
                 "tags": [
-                    "dtc_record_a"
+                    "DtcRecordA"
                 ],
+                "operationId": "DtcRecordARead",
                 "summary": "Get a specific dtc:record:a object",
                 "description": "Returns a specific dtc:record:a object by reference",
                 "parameters": [
@@ -3483,8 +3541,9 @@
             },
             "put": {
                 "tags": [
-                    "dtc_record_a"
+                    "DtcRecordA"
                 ],
+                "operationId": "DtcRecordAUpdate",
                 "summary": "Update a dtc:record:a object",
                 "description": "Updates a specific dtc:record:a object by reference",
                 "parameters": [
@@ -3550,8 +3609,9 @@
             },
             "delete": {
                 "tags": [
-                    "dtc_record_a"
+                    "DtcRecordA"
                 ],
+                "operationId": "DtcRecordADelete",
                 "summary": "Delete a dtc:record:a object",
                 "description": "Deletes a specific dtc:record:a object by reference",
                 "parameters": [
@@ -3592,8 +3652,9 @@
         "/dtc:record:aaaa": {
             "get": {
                 "tags": [
-                    "dtc_record_aaaa"
+                    "DtcRecordAaaa"
                 ],
+                "operationId": "DtcRecordAaaaList",
                 "summary": "Retrieve dtc:record:aaaa objects",
                 "description": "Returns a list of dtc:record:aaaa objects matching the search criteria",
                 "parameters": [
@@ -3654,8 +3715,9 @@
             },
             "post": {
                 "tags": [
-                    "dtc_record_aaaa"
+                    "DtcRecordAaaa"
                 ],
+                "operationId": "DtcRecordAaaaCreate",
                 "summary": "Create a dtc:record:aaaa object",
                 "description": "Creates a new dtc:record:aaaa object",
                 "parameters": [
@@ -3713,8 +3775,9 @@
         "/dtc:record:aaaa/{reference}": {
             "get": {
                 "tags": [
-                    "dtc_record_aaaa"
+                    "DtcRecordAaaa"
                 ],
+                "operationId": "DtcRecordAaaaRead",
                 "summary": "Get a specific dtc:record:aaaa object",
                 "description": "Returns a specific dtc:record:aaaa object by reference",
                 "parameters": [
@@ -3769,8 +3832,9 @@
             },
             "put": {
                 "tags": [
-                    "dtc_record_aaaa"
+                    "DtcRecordAaaa"
                 ],
+                "operationId": "DtcRecordAaaaUpdate",
                 "summary": "Update a dtc:record:aaaa object",
                 "description": "Updates a specific dtc:record:aaaa object by reference",
                 "parameters": [
@@ -3836,8 +3900,9 @@
             },
             "delete": {
                 "tags": [
-                    "dtc_record_aaaa"
+                    "DtcRecordAaaa"
                 ],
+                "operationId": "DtcRecordAaaaDelete",
                 "summary": "Delete a dtc:record:aaaa object",
                 "description": "Deletes a specific dtc:record:aaaa object by reference",
                 "parameters": [
@@ -3878,8 +3943,9 @@
         "/dtc:record:cname": {
             "get": {
                 "tags": [
-                    "dtc_record_cname"
+                    "DtcRecordCname"
                 ],
+                "operationId": "DtcRecordCnameList",
                 "summary": "Retrieve dtc:record:cname objects",
                 "description": "Returns a list of dtc:record:cname objects matching the search criteria",
                 "parameters": [
@@ -3940,8 +4006,9 @@
             },
             "post": {
                 "tags": [
-                    "dtc_record_cname"
+                    "DtcRecordCname"
                 ],
+                "operationId": "DtcRecordCnameCreate",
                 "summary": "Create a dtc:record:cname object",
                 "description": "Creates a new dtc:record:cname object",
                 "parameters": [
@@ -3999,8 +4066,9 @@
         "/dtc:record:cname/{reference}": {
             "get": {
                 "tags": [
-                    "dtc_record_cname"
+                    "DtcRecordCname"
                 ],
+                "operationId": "DtcRecordCnameRead",
                 "summary": "Get a specific dtc:record:cname object",
                 "description": "Returns a specific dtc:record:cname object by reference",
                 "parameters": [
@@ -4055,8 +4123,9 @@
             },
             "put": {
                 "tags": [
-                    "dtc_record_cname"
+                    "DtcRecordCname"
                 ],
+                "operationId": "DtcRecordCnameUpdate",
                 "summary": "Update a dtc:record:cname object",
                 "description": "Updates a specific dtc:record:cname object by reference",
                 "parameters": [
@@ -4122,8 +4191,9 @@
             },
             "delete": {
                 "tags": [
-                    "dtc_record_cname"
+                    "DtcRecordCname"
                 ],
+                "operationId": "DtcRecordCnameDelete",
                 "summary": "Delete a dtc:record:cname object",
                 "description": "Deletes a specific dtc:record:cname object by reference",
                 "parameters": [
@@ -4164,8 +4234,9 @@
         "/dtc:record:naptr": {
             "get": {
                 "tags": [
-                    "dtc_record_naptr"
+                    "DtcRecordNaptr"
                 ],
+                "operationId": "DtcRecordNaptrList",
                 "summary": "Retrieve dtc:record:naptr objects",
                 "description": "Returns a list of dtc:record:naptr objects matching the search criteria",
                 "parameters": [
@@ -4226,8 +4297,9 @@
             },
             "post": {
                 "tags": [
-                    "dtc_record_naptr"
+                    "DtcRecordNaptr"
                 ],
+                "operationId": "DtcRecordNaptrCreate",
                 "summary": "Create a dtc:record:naptr object",
                 "description": "Creates a new dtc:record:naptr object",
                 "parameters": [
@@ -4285,8 +4357,9 @@
         "/dtc:record:naptr/{reference}": {
             "get": {
                 "tags": [
-                    "dtc_record_naptr"
+                    "DtcRecordNaptr"
                 ],
+                "operationId": "DtcRecordNaptrRead",
                 "summary": "Get a specific dtc:record:naptr object",
                 "description": "Returns a specific dtc:record:naptr object by reference",
                 "parameters": [
@@ -4341,8 +4414,9 @@
             },
             "put": {
                 "tags": [
-                    "dtc_record_naptr"
+                    "DtcRecordNaptr"
                 ],
+                "operationId": "DtcRecordNaptrUpdate",
                 "summary": "Update a dtc:record:naptr object",
                 "description": "Updates a specific dtc:record:naptr object by reference",
                 "parameters": [
@@ -4408,8 +4482,9 @@
             },
             "delete": {
                 "tags": [
-                    "dtc_record_naptr"
+                    "DtcRecordNaptr"
                 ],
+                "operationId": "DtcRecordNaptrDelete",
                 "summary": "Delete a dtc:record:naptr object",
                 "description": "Deletes a specific dtc:record:naptr object by reference",
                 "parameters": [
@@ -4450,8 +4525,9 @@
         "/dtc:record:srv": {
             "get": {
                 "tags": [
-                    "dtc_record_srv"
+                    "DtcRecordSrv"
                 ],
+                "operationId": "DtcRecordSrvList",
                 "summary": "Retrieve dtc:record:srv objects",
                 "description": "Returns a list of dtc:record:srv objects matching the search criteria",
                 "parameters": [
@@ -4512,8 +4588,9 @@
             },
             "post": {
                 "tags": [
-                    "dtc_record_srv"
+                    "DtcRecordSrv"
                 ],
+                "operationId": "DtcRecordSrvCreate",
                 "summary": "Create a dtc:record:srv object",
                 "description": "Creates a new dtc:record:srv object",
                 "parameters": [
@@ -4571,8 +4648,9 @@
         "/dtc:record:srv/{reference}": {
             "get": {
                 "tags": [
-                    "dtc_record_srv"
+                    "DtcRecordSrv"
                 ],
+                "operationId": "DtcRecordSrvRead",
                 "summary": "Get a specific dtc:record:srv object",
                 "description": "Returns a specific dtc:record:srv object by reference",
                 "parameters": [
@@ -4627,8 +4705,9 @@
             },
             "put": {
                 "tags": [
-                    "dtc_record_srv"
+                    "DtcRecordSrv"
                 ],
+                "operationId": "DtcRecordSrvUpdate",
                 "summary": "Update a dtc:record:srv object",
                 "description": "Updates a specific dtc:record:srv object by reference",
                 "parameters": [
@@ -4694,8 +4773,9 @@
             },
             "delete": {
                 "tags": [
-                    "dtc_record_srv"
+                    "DtcRecordSrv"
                 ],
+                "operationId": "DtcRecordSrvDelete",
                 "summary": "Delete a dtc:record:srv object",
                 "description": "Deletes a specific dtc:record:srv object by reference",
                 "parameters": [
@@ -4736,8 +4816,9 @@
         "/dtc:certificate": {
             "get": {
                 "tags": [
-                    "dtc_certificate"
+                    "DtcCertificate"
                 ],
+                "operationId": "DtcCertificateList",
                 "summary": "Retrieve dtc:certificate objects",
                 "description": "Returns a list of dtc:certificate objects matching the search criteria",
                 "parameters": [
@@ -4800,8 +4881,9 @@
         "/dtc:certificate/{reference}": {
             "get": {
                 "tags": [
-                    "dtc_certificate"
+                    "DtcCertificate"
                 ],
+                "operationId": "DtcCertificateRead",
                 "summary": "Get a specific dtc:certificate object",
                 "description": "Returns a specific dtc:certificate object by reference",
                 "parameters": [
@@ -4858,8 +4940,9 @@
         "/dtc:allrecords": {
             "get": {
                 "tags": [
-                    "dtc_allrecords"
+                    "DtcAllrecords"
                 ],
+                "operationId": "DtcAllrecordsList",
                 "summary": "Retrieve dtc:allrecords objects",
                 "description": "Returns a list of dtc:allrecords objects matching the search criteria",
                 "parameters": [
@@ -4922,8 +5005,9 @@
         "/dtc:allrecords/{reference}": {
             "get": {
                 "tags": [
-                    "dtc_allrecords"
+                    "DtcAllrecords"
                 ],
+                "operationId": "DtcAllrecordsRead",
                 "summary": "Get a specific dtc:allrecords object",
                 "description": "Returns a specific dtc:allrecords object by reference",
                 "parameters": [
@@ -4978,8 +5062,9 @@
             },
             "put": {
                 "tags": [
-                    "dtc_allrecords"
+                    "DtcAllrecords"
                 ],
+                "operationId": "DtcAllrecordsUpdate",
                 "summary": "Update a dtc:allrecords object",
                 "description": "Updates a specific dtc:allrecords object by reference",
                 "parameters": [
@@ -5047,8 +5132,9 @@
         "/dtc:object": {
             "get": {
                 "tags": [
-                    "dtc_object"
+                    "DtcObject"
                 ],
+                "operationId": "DtcObjectList",
                 "summary": "Retrieve dtc:object objects",
                 "description": "Returns a list of dtc:object objects matching the search criteria",
                 "parameters": [
@@ -5111,8 +5197,9 @@
         "/dtc:object/{reference}": {
             "get": {
                 "tags": [
-                    "dtc_object"
+                    "DtcObject"
                 ],
+                "operationId": "DtcObjectRead",
                 "summary": "Get a specific dtc:object object",
                 "description": "Returns a specific dtc:object object by reference",
                 "parameters": [
@@ -5167,8 +5254,9 @@
             },
             "put": {
                 "tags": [
-                    "dtc_object"
+                    "DtcObject"
                 ],
+                "operationId": "DtcObjectUpdate",
                 "summary": "Update a dtc:object object",
                 "description": "Updates a specific dtc:object object by reference",
                 "parameters": [
@@ -5237,8 +5325,9 @@
         "/dtc:topology:rule": {
             "get": {
                 "tags": [
-                    "dtc_topology_rule"
+                    "DtcTopologyRule"
                 ],
+                "operationId": "DtcTopologyRuleList",
                 "summary": "Retrieve dtc:topology:rule objects",
                 "description": "Returns a list of dtc:topology:rule objects matching the search criteria",
                 "parameters": [
@@ -5301,8 +5390,9 @@
         "/dtc:topology:rule/{reference}": {
             "get": {
                 "tags": [
-                    "dtc_topology_rule"
+                    "DtcTopologyRule"
                 ],
+                "operationId": "DtcTopologyRuleRead",
                 "summary": "Get a specific dtc:topology:rule object",
                 "description": "Returns a specific dtc:topology:rule object by reference",
                 "parameters": [
@@ -5357,8 +5447,9 @@
             },
             "put": {
                 "tags": [
-                    "dtc_topology_rule"
+                    "DtcTopologyRule"
                 ],
+                "operationId": "DtcTopologyRuleUpdate",
                 "summary": "Update a dtc:topology:rule object",
                 "description": "Updates a specific dtc:topology:rule object by reference",
                 "parameters": [
@@ -5426,8 +5517,9 @@
         "/dtc:topology:label": {
             "get": {
                 "tags": [
-                    "dtc_topology_label"
+                    "DtcTopologyLabel"
                 ],
+                "operationId": "DtcTopologyLabelList",
                 "summary": "Retrieve dtc:topology:label objects",
                 "description": "Returns a list of dtc:topology:label objects matching the search criteria",
                 "parameters": [
@@ -5490,8 +5582,9 @@
         "/dtc:topology:label/{reference}": {
             "get": {
                 "tags": [
-                    "dtc_topology_label"
+                    "DtcTopologyLabel"
                 ],
+                "operationId": "DtcTopologyLabelRead",
                 "summary": "Get a specific dtc:topology:label object",
                 "description": "Returns a specific dtc:topology:label object by reference",
                 "parameters": [
@@ -5770,25 +5863,6 @@
                                 }
                             }
                         }
-                    }
-                ]
-            },
-            "CreateDtcResponse": {
-                "oneOf": [
-                    {
-                        "description": "The response format to create __Dtc__ in object format.",
-                        "type": "object",
-                        "title": "CreateDtcResponseAsObject",
-                        "properties": {
-                            "result": {
-                                "$ref": "#/components/schemas/Dtc"
-                            }
-                        }
-                    },
-                    {
-                        "description": "The response format to create __Dtc__.",
-                        "type": "string",
-                        "title": "CreateDtcResponse"
                     }
                 ]
             },
@@ -6886,25 +6960,6 @@
                                 }
                             }
                         }
-                    }
-                ]
-            },
-            "CreateDtcMonitorResponse": {
-                "oneOf": [
-                    {
-                        "description": "The response format to create __DtcMonitor__ in object format.",
-                        "type": "object",
-                        "title": "CreateDtcMonitorResponseAsObject",
-                        "properties": {
-                            "result": {
-                                "$ref": "#/components/schemas/DtcMonitor"
-                            }
-                        }
-                    },
-                    {
-                        "description": "The response format to create __DtcMonitor__.",
-                        "type": "string",
-                        "title": "CreateDtcMonitorResponse"
                     }
                 ]
             },
@@ -8733,25 +8788,6 @@
                     }
                 ]
             },
-            "CreateDtcCertificateResponse": {
-                "oneOf": [
-                    {
-                        "description": "The response format to create __DtcCertificate__ in object format.",
-                        "type": "object",
-                        "title": "CreateDtcCertificateResponseAsObject",
-                        "properties": {
-                            "result": {
-                                "$ref": "#/components/schemas/DtcCertificate"
-                            }
-                        }
-                    },
-                    {
-                        "description": "The response format to create __DtcCertificate__.",
-                        "type": "string",
-                        "title": "CreateDtcCertificateResponse"
-                    }
-                ]
-            },
             "GetDtcCertificateResponse": {
                 "oneOf": [
                     {
@@ -8865,25 +8901,6 @@
                                 }
                             }
                         }
-                    }
-                ]
-            },
-            "CreateDtcAllrecordsResponse": {
-                "oneOf": [
-                    {
-                        "description": "The response format to create __DtcAllrecords__ in object format.",
-                        "type": "object",
-                        "title": "CreateDtcAllrecordsResponseAsObject",
-                        "properties": {
-                            "result": {
-                                "$ref": "#/components/schemas/DtcAllrecords"
-                            }
-                        }
-                    },
-                    {
-                        "description": "The response format to create __DtcAllrecords__.",
-                        "type": "string",
-                        "title": "CreateDtcAllrecordsResponse"
                     }
                 ]
             },
@@ -9036,25 +9053,6 @@
                                 }
                             }
                         }
-                    }
-                ]
-            },
-            "CreateDtcObjectResponse": {
-                "oneOf": [
-                    {
-                        "description": "The response format to create __DtcObject__ in object format.",
-                        "type": "object",
-                        "title": "CreateDtcObjectResponseAsObject",
-                        "properties": {
-                            "result": {
-                                "$ref": "#/components/schemas/DtcObject"
-                            }
-                        }
-                    },
-                    {
-                        "description": "The response format to create __DtcObject__.",
-                        "type": "string",
-                        "title": "CreateDtcObjectResponse"
                     }
                 ]
             },
@@ -9211,25 +9209,6 @@
                     }
                 ]
             },
-            "CreateDtcTopologyRuleResponse": {
-                "oneOf": [
-                    {
-                        "description": "The response format to create __DtcTopologyRule__ in object format.",
-                        "type": "object",
-                        "title": "CreateDtcTopologyRuleResponseAsObject",
-                        "properties": {
-                            "result": {
-                                "$ref": "#/components/schemas/DtcTopologyRule"
-                            }
-                        }
-                    },
-                    {
-                        "description": "The response format to create __DtcTopologyRule__.",
-                        "type": "string",
-                        "title": "CreateDtcTopologyRuleResponse"
-                    }
-                ]
-            },
             "GetDtcTopologyRuleResponse": {
                 "oneOf": [
                     {
@@ -9322,25 +9301,6 @@
                                 }
                             }
                         }
-                    }
-                ]
-            },
-            "CreateDtcTopologyLabelResponse": {
-                "oneOf": [
-                    {
-                        "description": "The response format to create __DtcTopologyLabel__ in object format.",
-                        "type": "object",
-                        "title": "CreateDtcTopologyLabelResponseAsObject",
-                        "properties": {
-                            "result": {
-                                "$ref": "#/components/schemas/DtcTopologyLabel"
-                            }
-                        }
-                    },
-                    {
-                        "description": "The response format to create __DtcTopologyLabel__.",
-                        "type": "string",
-                        "title": "CreateDtcTopologyLabelResponse"
                     }
                 ]
             },

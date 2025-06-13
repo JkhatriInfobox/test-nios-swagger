@@ -22,111 +22,111 @@
     ],
     "tags": [
         {
-            "name": "dhcp_statistics",
+            "name": "DhcpStatistics",
             "description": "Operations for dhcp:statistics objects"
         },
         {
-            "name": "dhcpfailover",
+            "name": "Dhcpfailover",
             "description": "Operations for dhcpfailover objects"
         },
         {
-            "name": "dhcpoptiondefinition",
+            "name": "Dhcpoptiondefinition",
             "description": "Operations for dhcpoptiondefinition objects"
         },
         {
-            "name": "dhcpoptionspace",
+            "name": "Dhcpoptionspace",
             "description": "Operations for dhcpoptionspace objects"
         },
         {
-            "name": "filterfingerprint",
+            "name": "Filterfingerprint",
             "description": "Operations for filterfingerprint objects"
         },
         {
-            "name": "filtermac",
+            "name": "Filtermac",
             "description": "Operations for filtermac objects"
         },
         {
-            "name": "filternac",
+            "name": "Filternac",
             "description": "Operations for filternac objects"
         },
         {
-            "name": "filteroption",
+            "name": "Filteroption",
             "description": "Operations for filteroption objects"
         },
         {
-            "name": "filterrelayagent",
+            "name": "Filterrelayagent",
             "description": "Operations for filterrelayagent objects"
         },
         {
-            "name": "fingerprint",
+            "name": "Fingerprint",
             "description": "Operations for fingerprint objects"
         },
         {
-            "name": "fixedaddress",
+            "name": "Fixedaddress",
             "description": "Operations for fixedaddress objects"
         },
         {
-            "name": "fixedaddresstemplate",
+            "name": "Fixedaddresstemplate",
             "description": "Operations for fixedaddresstemplate objects"
         },
         {
-            "name": "ipv6dhcpoptiondefinition",
+            "name": "Ipv6dhcpoptiondefinition",
             "description": "Operations for ipv6dhcpoptiondefinition objects"
         },
         {
-            "name": "ipv6dhcpoptionspace",
+            "name": "Ipv6dhcpoptionspace",
             "description": "Operations for ipv6dhcpoptionspace objects"
         },
         {
-            "name": "ipv6filteroption",
+            "name": "Ipv6filteroption",
             "description": "Operations for ipv6filteroption objects"
         },
         {
-            "name": "ipv6fixedaddress",
+            "name": "Ipv6fixedaddress",
             "description": "Operations for ipv6fixedaddress objects"
         },
         {
-            "name": "ipv6fixedaddresstemplate",
+            "name": "Ipv6fixedaddresstemplate",
             "description": "Operations for ipv6fixedaddresstemplate objects"
         },
         {
-            "name": "ipv6range",
+            "name": "Ipv6range",
             "description": "Operations for ipv6range objects"
         },
         {
-            "name": "ipv6rangetemplate",
+            "name": "Ipv6rangetemplate",
             "description": "Operations for ipv6rangetemplate objects"
         },
         {
-            "name": "ipv6sharednetwork",
+            "name": "Ipv6sharednetwork",
             "description": "Operations for ipv6sharednetwork objects"
         },
         {
-            "name": "lease",
+            "name": "Lease",
             "description": "Operations for lease objects"
         },
         {
-            "name": "macfilteraddress",
+            "name": "Macfilteraddress",
             "description": "Operations for macfilteraddress objects"
         },
         {
-            "name": "range",
+            "name": "Range",
             "description": "Operations for range objects"
         },
         {
-            "name": "rangetemplate",
+            "name": "Rangetemplate",
             "description": "Operations for rangetemplate objects"
         },
         {
-            "name": "roaminghost",
+            "name": "Roaminghost",
             "description": "Operations for roaminghost objects"
         },
         {
-            "name": "sharednetwork",
+            "name": "Sharednetwork",
             "description": "Operations for sharednetwork objects"
         },
         {
-            "name": "orderedranges",
+            "name": "Orderedranges",
             "description": "Operations for orderedranges objects"
         }
     ],
@@ -134,8 +134,9 @@
         "/dhcp:statistics": {
             "get": {
                 "tags": [
-                    "dhcp_statistics"
+                    "DhcpStatistics"
                 ],
+                "operationId": "DhcpStatisticsList",
                 "summary": "Retrieve dhcp:statistics objects",
                 "description": "Returns a list of dhcp:statistics objects matching the search criteria",
                 "parameters": [
@@ -198,8 +199,9 @@
         "/dhcp:statistics/{reference}": {
             "get": {
                 "tags": [
-                    "dhcp_statistics"
+                    "DhcpStatistics"
                 ],
+                "operationId": "DhcpStatisticsRead",
                 "summary": "Get a specific dhcp:statistics object",
                 "description": "Returns a specific dhcp:statistics object by reference",
                 "parameters": [
@@ -256,8 +258,9 @@
         "/dhcpfailover": {
             "get": {
                 "tags": [
-                    "dhcpfailover"
+                    "Dhcpfailover"
                 ],
+                "operationId": "DhcpfailoverList",
                 "summary": "Retrieve dhcpfailover objects",
                 "description": "Returns a list of dhcpfailover objects matching the search criteria",
                 "parameters": [
@@ -318,8 +321,9 @@
             },
             "post": {
                 "tags": [
-                    "dhcpfailover"
+                    "Dhcpfailover"
                 ],
+                "operationId": "DhcpfailoverCreate",
                 "summary": "Create a dhcpfailover object",
                 "description": "Creates a new dhcpfailover object",
                 "parameters": [
@@ -378,8 +382,9 @@
         "/dhcpfailover/{reference}": {
             "get": {
                 "tags": [
-                    "dhcpfailover"
+                    "Dhcpfailover"
                 ],
+                "operationId": "DhcpfailoverRead",
                 "summary": "Get a specific dhcpfailover object",
                 "description": "Returns a specific dhcpfailover object by reference",
                 "parameters": [
@@ -434,8 +439,9 @@
             },
             "put": {
                 "tags": [
-                    "dhcpfailover"
+                    "Dhcpfailover"
                 ],
+                "operationId": "DhcpfailoverUpdate",
                 "summary": "Update a dhcpfailover object",
                 "description": "Updates a specific dhcpfailover object by reference",
                 "parameters": [
@@ -502,8 +508,9 @@
             },
             "delete": {
                 "tags": [
-                    "dhcpfailover"
+                    "Dhcpfailover"
                 ],
+                "operationId": "DhcpfailoverDelete",
                 "summary": "Delete a dhcpfailover object",
                 "description": "Deletes a specific dhcpfailover object by reference",
                 "parameters": [
@@ -544,8 +551,9 @@
         "/dhcpoptiondefinition": {
             "get": {
                 "tags": [
-                    "dhcpoptiondefinition"
+                    "Dhcpoptiondefinition"
                 ],
+                "operationId": "DhcpoptiondefinitionList",
                 "summary": "Retrieve dhcpoptiondefinition objects",
                 "description": "Returns a list of dhcpoptiondefinition objects matching the search criteria",
                 "parameters": [
@@ -606,8 +614,9 @@
             },
             "post": {
                 "tags": [
-                    "dhcpoptiondefinition"
+                    "Dhcpoptiondefinition"
                 ],
+                "operationId": "DhcpoptiondefinitionCreate",
                 "summary": "Create a dhcpoptiondefinition object",
                 "description": "Creates a new dhcpoptiondefinition object",
                 "parameters": [
@@ -665,8 +674,9 @@
         "/dhcpoptiondefinition/{reference}": {
             "get": {
                 "tags": [
-                    "dhcpoptiondefinition"
+                    "Dhcpoptiondefinition"
                 ],
+                "operationId": "DhcpoptiondefinitionRead",
                 "summary": "Get a specific dhcpoptiondefinition object",
                 "description": "Returns a specific dhcpoptiondefinition object by reference",
                 "parameters": [
@@ -721,8 +731,9 @@
             },
             "put": {
                 "tags": [
-                    "dhcpoptiondefinition"
+                    "Dhcpoptiondefinition"
                 ],
+                "operationId": "DhcpoptiondefinitionUpdate",
                 "summary": "Update a dhcpoptiondefinition object",
                 "description": "Updates a specific dhcpoptiondefinition object by reference",
                 "parameters": [
@@ -788,8 +799,9 @@
             },
             "delete": {
                 "tags": [
-                    "dhcpoptiondefinition"
+                    "Dhcpoptiondefinition"
                 ],
+                "operationId": "DhcpoptiondefinitionDelete",
                 "summary": "Delete a dhcpoptiondefinition object",
                 "description": "Deletes a specific dhcpoptiondefinition object by reference",
                 "parameters": [
@@ -830,8 +842,9 @@
         "/dhcpoptionspace": {
             "get": {
                 "tags": [
-                    "dhcpoptionspace"
+                    "Dhcpoptionspace"
                 ],
+                "operationId": "DhcpoptionspaceList",
                 "summary": "Retrieve dhcpoptionspace objects",
                 "description": "Returns a list of dhcpoptionspace objects matching the search criteria",
                 "parameters": [
@@ -892,8 +905,9 @@
             },
             "post": {
                 "tags": [
-                    "dhcpoptionspace"
+                    "Dhcpoptionspace"
                 ],
+                "operationId": "DhcpoptionspaceCreate",
                 "summary": "Create a dhcpoptionspace object",
                 "description": "Creates a new dhcpoptionspace object",
                 "parameters": [
@@ -951,8 +965,9 @@
         "/dhcpoptionspace/{reference}": {
             "get": {
                 "tags": [
-                    "dhcpoptionspace"
+                    "Dhcpoptionspace"
                 ],
+                "operationId": "DhcpoptionspaceRead",
                 "summary": "Get a specific dhcpoptionspace object",
                 "description": "Returns a specific dhcpoptionspace object by reference",
                 "parameters": [
@@ -1007,8 +1022,9 @@
             },
             "put": {
                 "tags": [
-                    "dhcpoptionspace"
+                    "Dhcpoptionspace"
                 ],
+                "operationId": "DhcpoptionspaceUpdate",
                 "summary": "Update a dhcpoptionspace object",
                 "description": "Updates a specific dhcpoptionspace object by reference",
                 "parameters": [
@@ -1074,8 +1090,9 @@
             },
             "delete": {
                 "tags": [
-                    "dhcpoptionspace"
+                    "Dhcpoptionspace"
                 ],
+                "operationId": "DhcpoptionspaceDelete",
                 "summary": "Delete a dhcpoptionspace object",
                 "description": "Deletes a specific dhcpoptionspace object by reference",
                 "parameters": [
@@ -1116,8 +1133,9 @@
         "/filterfingerprint": {
             "get": {
                 "tags": [
-                    "filterfingerprint"
+                    "Filterfingerprint"
                 ],
+                "operationId": "FilterfingerprintList",
                 "summary": "Retrieve filterfingerprint objects",
                 "description": "Returns a list of filterfingerprint objects matching the search criteria",
                 "parameters": [
@@ -1178,8 +1196,9 @@
             },
             "post": {
                 "tags": [
-                    "filterfingerprint"
+                    "Filterfingerprint"
                 ],
+                "operationId": "FilterfingerprintCreate",
                 "summary": "Create a filterfingerprint object",
                 "description": "Creates a new filterfingerprint object",
                 "parameters": [
@@ -1238,8 +1257,9 @@
         "/filterfingerprint/{reference}": {
             "get": {
                 "tags": [
-                    "filterfingerprint"
+                    "Filterfingerprint"
                 ],
+                "operationId": "FilterfingerprintRead",
                 "summary": "Get a specific filterfingerprint object",
                 "description": "Returns a specific filterfingerprint object by reference",
                 "parameters": [
@@ -1294,8 +1314,9 @@
             },
             "put": {
                 "tags": [
-                    "filterfingerprint"
+                    "Filterfingerprint"
                 ],
+                "operationId": "FilterfingerprintUpdate",
                 "summary": "Update a filterfingerprint object",
                 "description": "Updates a specific filterfingerprint object by reference",
                 "parameters": [
@@ -1362,8 +1383,9 @@
             },
             "delete": {
                 "tags": [
-                    "filterfingerprint"
+                    "Filterfingerprint"
                 ],
+                "operationId": "FilterfingerprintDelete",
                 "summary": "Delete a filterfingerprint object",
                 "description": "Deletes a specific filterfingerprint object by reference",
                 "parameters": [
@@ -1404,8 +1426,9 @@
         "/filtermac": {
             "get": {
                 "tags": [
-                    "filtermac"
+                    "Filtermac"
                 ],
+                "operationId": "FiltermacList",
                 "summary": "Retrieve filtermac objects",
                 "description": "Returns a list of filtermac objects matching the search criteria",
                 "parameters": [
@@ -1466,8 +1489,9 @@
             },
             "post": {
                 "tags": [
-                    "filtermac"
+                    "Filtermac"
                 ],
+                "operationId": "FiltermacCreate",
                 "summary": "Create a filtermac object",
                 "description": "Creates a new filtermac object",
                 "parameters": [
@@ -1526,8 +1550,9 @@
         "/filtermac/{reference}": {
             "get": {
                 "tags": [
-                    "filtermac"
+                    "Filtermac"
                 ],
+                "operationId": "FiltermacRead",
                 "summary": "Get a specific filtermac object",
                 "description": "Returns a specific filtermac object by reference",
                 "parameters": [
@@ -1582,8 +1607,9 @@
             },
             "put": {
                 "tags": [
-                    "filtermac"
+                    "Filtermac"
                 ],
+                "operationId": "FiltermacUpdate",
                 "summary": "Update a filtermac object",
                 "description": "Updates a specific filtermac object by reference",
                 "parameters": [
@@ -1650,8 +1676,9 @@
             },
             "delete": {
                 "tags": [
-                    "filtermac"
+                    "Filtermac"
                 ],
+                "operationId": "FiltermacDelete",
                 "summary": "Delete a filtermac object",
                 "description": "Deletes a specific filtermac object by reference",
                 "parameters": [
@@ -1692,8 +1719,9 @@
         "/filternac": {
             "get": {
                 "tags": [
-                    "filternac"
+                    "Filternac"
                 ],
+                "operationId": "FilternacList",
                 "summary": "Retrieve filternac objects",
                 "description": "Returns a list of filternac objects matching the search criteria",
                 "parameters": [
@@ -1754,8 +1782,9 @@
             },
             "post": {
                 "tags": [
-                    "filternac"
+                    "Filternac"
                 ],
+                "operationId": "FilternacCreate",
                 "summary": "Create a filternac object",
                 "description": "Creates a new filternac object",
                 "parameters": [
@@ -1814,8 +1843,9 @@
         "/filternac/{reference}": {
             "get": {
                 "tags": [
-                    "filternac"
+                    "Filternac"
                 ],
+                "operationId": "FilternacRead",
                 "summary": "Get a specific filternac object",
                 "description": "Returns a specific filternac object by reference",
                 "parameters": [
@@ -1870,8 +1900,9 @@
             },
             "put": {
                 "tags": [
-                    "filternac"
+                    "Filternac"
                 ],
+                "operationId": "FilternacUpdate",
                 "summary": "Update a filternac object",
                 "description": "Updates a specific filternac object by reference",
                 "parameters": [
@@ -1938,8 +1969,9 @@
             },
             "delete": {
                 "tags": [
-                    "filternac"
+                    "Filternac"
                 ],
+                "operationId": "FilternacDelete",
                 "summary": "Delete a filternac object",
                 "description": "Deletes a specific filternac object by reference",
                 "parameters": [
@@ -1980,8 +2012,9 @@
         "/filteroption": {
             "get": {
                 "tags": [
-                    "filteroption"
+                    "Filteroption"
                 ],
+                "operationId": "FilteroptionList",
                 "summary": "Retrieve filteroption objects",
                 "description": "Returns a list of filteroption objects matching the search criteria",
                 "parameters": [
@@ -2042,8 +2075,9 @@
             },
             "post": {
                 "tags": [
-                    "filteroption"
+                    "Filteroption"
                 ],
+                "operationId": "FilteroptionCreate",
                 "summary": "Create a filteroption object",
                 "description": "Creates a new filteroption object",
                 "parameters": [
@@ -2102,8 +2136,9 @@
         "/filteroption/{reference}": {
             "get": {
                 "tags": [
-                    "filteroption"
+                    "Filteroption"
                 ],
+                "operationId": "FilteroptionRead",
                 "summary": "Get a specific filteroption object",
                 "description": "Returns a specific filteroption object by reference",
                 "parameters": [
@@ -2158,8 +2193,9 @@
             },
             "put": {
                 "tags": [
-                    "filteroption"
+                    "Filteroption"
                 ],
+                "operationId": "FilteroptionUpdate",
                 "summary": "Update a filteroption object",
                 "description": "Updates a specific filteroption object by reference",
                 "parameters": [
@@ -2226,8 +2262,9 @@
             },
             "delete": {
                 "tags": [
-                    "filteroption"
+                    "Filteroption"
                 ],
+                "operationId": "FilteroptionDelete",
                 "summary": "Delete a filteroption object",
                 "description": "Deletes a specific filteroption object by reference",
                 "parameters": [
@@ -2268,8 +2305,9 @@
         "/filterrelayagent": {
             "get": {
                 "tags": [
-                    "filterrelayagent"
+                    "Filterrelayagent"
                 ],
+                "operationId": "FilterrelayagentList",
                 "summary": "Retrieve filterrelayagent objects",
                 "description": "Returns a list of filterrelayagent objects matching the search criteria",
                 "parameters": [
@@ -2330,8 +2368,9 @@
             },
             "post": {
                 "tags": [
-                    "filterrelayagent"
+                    "Filterrelayagent"
                 ],
+                "operationId": "FilterrelayagentCreate",
                 "summary": "Create a filterrelayagent object",
                 "description": "Creates a new filterrelayagent object",
                 "parameters": [
@@ -2390,8 +2429,9 @@
         "/filterrelayagent/{reference}": {
             "get": {
                 "tags": [
-                    "filterrelayagent"
+                    "Filterrelayagent"
                 ],
+                "operationId": "FilterrelayagentRead",
                 "summary": "Get a specific filterrelayagent object",
                 "description": "Returns a specific filterrelayagent object by reference",
                 "parameters": [
@@ -2446,8 +2486,9 @@
             },
             "put": {
                 "tags": [
-                    "filterrelayagent"
+                    "Filterrelayagent"
                 ],
+                "operationId": "FilterrelayagentUpdate",
                 "summary": "Update a filterrelayagent object",
                 "description": "Updates a specific filterrelayagent object by reference",
                 "parameters": [
@@ -2514,8 +2555,9 @@
             },
             "delete": {
                 "tags": [
-                    "filterrelayagent"
+                    "Filterrelayagent"
                 ],
+                "operationId": "FilterrelayagentDelete",
                 "summary": "Delete a filterrelayagent object",
                 "description": "Deletes a specific filterrelayagent object by reference",
                 "parameters": [
@@ -2556,8 +2598,9 @@
         "/fingerprint": {
             "get": {
                 "tags": [
-                    "fingerprint"
+                    "Fingerprint"
                 ],
+                "operationId": "FingerprintList",
                 "summary": "Retrieve fingerprint objects",
                 "description": "Returns a list of fingerprint objects matching the search criteria",
                 "parameters": [
@@ -2618,8 +2661,9 @@
             },
             "post": {
                 "tags": [
-                    "fingerprint"
+                    "Fingerprint"
                 ],
+                "operationId": "FingerprintCreate",
                 "summary": "Create a fingerprint object",
                 "description": "Creates a new fingerprint object",
                 "parameters": [
@@ -2678,8 +2722,9 @@
         "/fingerprint/{reference}": {
             "get": {
                 "tags": [
-                    "fingerprint"
+                    "Fingerprint"
                 ],
+                "operationId": "FingerprintRead",
                 "summary": "Get a specific fingerprint object",
                 "description": "Returns a specific fingerprint object by reference",
                 "parameters": [
@@ -2734,8 +2779,9 @@
             },
             "put": {
                 "tags": [
-                    "fingerprint"
+                    "Fingerprint"
                 ],
+                "operationId": "FingerprintUpdate",
                 "summary": "Update a fingerprint object",
                 "description": "Updates a specific fingerprint object by reference",
                 "parameters": [
@@ -2802,8 +2848,9 @@
             },
             "delete": {
                 "tags": [
-                    "fingerprint"
+                    "Fingerprint"
                 ],
+                "operationId": "FingerprintDelete",
                 "summary": "Delete a fingerprint object",
                 "description": "Deletes a specific fingerprint object by reference",
                 "parameters": [
@@ -2844,8 +2891,9 @@
         "/fixedaddress": {
             "get": {
                 "tags": [
-                    "fixedaddress"
+                    "Fixedaddress"
                 ],
+                "operationId": "FixedaddressList",
                 "summary": "Retrieve fixedaddress objects",
                 "description": "Returns a list of fixedaddress objects matching the search criteria",
                 "parameters": [
@@ -2906,8 +2954,9 @@
             },
             "post": {
                 "tags": [
-                    "fixedaddress"
+                    "Fixedaddress"
                 ],
+                "operationId": "FixedaddressCreate",
                 "summary": "Create a fixedaddress object",
                 "description": "Creates a new fixedaddress object",
                 "parameters": [
@@ -2966,8 +3015,9 @@
         "/fixedaddress/{reference}": {
             "get": {
                 "tags": [
-                    "fixedaddress"
+                    "Fixedaddress"
                 ],
+                "operationId": "FixedaddressRead",
                 "summary": "Get a specific fixedaddress object",
                 "description": "Returns a specific fixedaddress object by reference",
                 "parameters": [
@@ -3022,8 +3072,9 @@
             },
             "put": {
                 "tags": [
-                    "fixedaddress"
+                    "Fixedaddress"
                 ],
+                "operationId": "FixedaddressUpdate",
                 "summary": "Update a fixedaddress object",
                 "description": "Updates a specific fixedaddress object by reference",
                 "parameters": [
@@ -3090,8 +3141,9 @@
             },
             "delete": {
                 "tags": [
-                    "fixedaddress"
+                    "Fixedaddress"
                 ],
+                "operationId": "FixedaddressDelete",
                 "summary": "Delete a fixedaddress object",
                 "description": "Deletes a specific fixedaddress object by reference",
                 "parameters": [
@@ -3132,8 +3184,9 @@
         "/fixedaddresstemplate": {
             "get": {
                 "tags": [
-                    "fixedaddresstemplate"
+                    "Fixedaddresstemplate"
                 ],
+                "operationId": "FixedaddresstemplateList",
                 "summary": "Retrieve fixedaddresstemplate objects",
                 "description": "Returns a list of fixedaddresstemplate objects matching the search criteria",
                 "parameters": [
@@ -3194,8 +3247,9 @@
             },
             "post": {
                 "tags": [
-                    "fixedaddresstemplate"
+                    "Fixedaddresstemplate"
                 ],
+                "operationId": "FixedaddresstemplateCreate",
                 "summary": "Create a fixedaddresstemplate object",
                 "description": "Creates a new fixedaddresstemplate object",
                 "parameters": [
@@ -3254,8 +3308,9 @@
         "/fixedaddresstemplate/{reference}": {
             "get": {
                 "tags": [
-                    "fixedaddresstemplate"
+                    "Fixedaddresstemplate"
                 ],
+                "operationId": "FixedaddresstemplateRead",
                 "summary": "Get a specific fixedaddresstemplate object",
                 "description": "Returns a specific fixedaddresstemplate object by reference",
                 "parameters": [
@@ -3310,8 +3365,9 @@
             },
             "put": {
                 "tags": [
-                    "fixedaddresstemplate"
+                    "Fixedaddresstemplate"
                 ],
+                "operationId": "FixedaddresstemplateUpdate",
                 "summary": "Update a fixedaddresstemplate object",
                 "description": "Updates a specific fixedaddresstemplate object by reference",
                 "parameters": [
@@ -3378,8 +3434,9 @@
             },
             "delete": {
                 "tags": [
-                    "fixedaddresstemplate"
+                    "Fixedaddresstemplate"
                 ],
+                "operationId": "FixedaddresstemplateDelete",
                 "summary": "Delete a fixedaddresstemplate object",
                 "description": "Deletes a specific fixedaddresstemplate object by reference",
                 "parameters": [
@@ -3420,8 +3477,9 @@
         "/ipv6dhcpoptiondefinition": {
             "get": {
                 "tags": [
-                    "ipv6dhcpoptiondefinition"
+                    "Ipv6dhcpoptiondefinition"
                 ],
+                "operationId": "Ipv6dhcpoptiondefinitionList",
                 "summary": "Retrieve ipv6dhcpoptiondefinition objects",
                 "description": "Returns a list of ipv6dhcpoptiondefinition objects matching the search criteria",
                 "parameters": [
@@ -3482,8 +3540,9 @@
             },
             "post": {
                 "tags": [
-                    "ipv6dhcpoptiondefinition"
+                    "Ipv6dhcpoptiondefinition"
                 ],
+                "operationId": "Ipv6dhcpoptiondefinitionCreate",
                 "summary": "Create a ipv6dhcpoptiondefinition object",
                 "description": "Creates a new ipv6dhcpoptiondefinition object",
                 "parameters": [
@@ -3541,8 +3600,9 @@
         "/ipv6dhcpoptiondefinition/{reference}": {
             "get": {
                 "tags": [
-                    "ipv6dhcpoptiondefinition"
+                    "Ipv6dhcpoptiondefinition"
                 ],
+                "operationId": "Ipv6dhcpoptiondefinitionRead",
                 "summary": "Get a specific ipv6dhcpoptiondefinition object",
                 "description": "Returns a specific ipv6dhcpoptiondefinition object by reference",
                 "parameters": [
@@ -3597,8 +3657,9 @@
             },
             "put": {
                 "tags": [
-                    "ipv6dhcpoptiondefinition"
+                    "Ipv6dhcpoptiondefinition"
                 ],
+                "operationId": "Ipv6dhcpoptiondefinitionUpdate",
                 "summary": "Update a ipv6dhcpoptiondefinition object",
                 "description": "Updates a specific ipv6dhcpoptiondefinition object by reference",
                 "parameters": [
@@ -3664,8 +3725,9 @@
             },
             "delete": {
                 "tags": [
-                    "ipv6dhcpoptiondefinition"
+                    "Ipv6dhcpoptiondefinition"
                 ],
+                "operationId": "Ipv6dhcpoptiondefinitionDelete",
                 "summary": "Delete a ipv6dhcpoptiondefinition object",
                 "description": "Deletes a specific ipv6dhcpoptiondefinition object by reference",
                 "parameters": [
@@ -3706,8 +3768,9 @@
         "/ipv6dhcpoptionspace": {
             "get": {
                 "tags": [
-                    "ipv6dhcpoptionspace"
+                    "Ipv6dhcpoptionspace"
                 ],
+                "operationId": "Ipv6dhcpoptionspaceList",
                 "summary": "Retrieve ipv6dhcpoptionspace objects",
                 "description": "Returns a list of ipv6dhcpoptionspace objects matching the search criteria",
                 "parameters": [
@@ -3768,8 +3831,9 @@
             },
             "post": {
                 "tags": [
-                    "ipv6dhcpoptionspace"
+                    "Ipv6dhcpoptionspace"
                 ],
+                "operationId": "Ipv6dhcpoptionspaceCreate",
                 "summary": "Create a ipv6dhcpoptionspace object",
                 "description": "Creates a new ipv6dhcpoptionspace object",
                 "parameters": [
@@ -3827,8 +3891,9 @@
         "/ipv6dhcpoptionspace/{reference}": {
             "get": {
                 "tags": [
-                    "ipv6dhcpoptionspace"
+                    "Ipv6dhcpoptionspace"
                 ],
+                "operationId": "Ipv6dhcpoptionspaceRead",
                 "summary": "Get a specific ipv6dhcpoptionspace object",
                 "description": "Returns a specific ipv6dhcpoptionspace object by reference",
                 "parameters": [
@@ -3883,8 +3948,9 @@
             },
             "put": {
                 "tags": [
-                    "ipv6dhcpoptionspace"
+                    "Ipv6dhcpoptionspace"
                 ],
+                "operationId": "Ipv6dhcpoptionspaceUpdate",
                 "summary": "Update a ipv6dhcpoptionspace object",
                 "description": "Updates a specific ipv6dhcpoptionspace object by reference",
                 "parameters": [
@@ -3950,8 +4016,9 @@
             },
             "delete": {
                 "tags": [
-                    "ipv6dhcpoptionspace"
+                    "Ipv6dhcpoptionspace"
                 ],
+                "operationId": "Ipv6dhcpoptionspaceDelete",
                 "summary": "Delete a ipv6dhcpoptionspace object",
                 "description": "Deletes a specific ipv6dhcpoptionspace object by reference",
                 "parameters": [
@@ -3992,8 +4059,9 @@
         "/ipv6filteroption": {
             "get": {
                 "tags": [
-                    "ipv6filteroption"
+                    "Ipv6filteroption"
                 ],
+                "operationId": "Ipv6filteroptionList",
                 "summary": "Retrieve ipv6filteroption objects",
                 "description": "Returns a list of ipv6filteroption objects matching the search criteria",
                 "parameters": [
@@ -4054,8 +4122,9 @@
             },
             "post": {
                 "tags": [
-                    "ipv6filteroption"
+                    "Ipv6filteroption"
                 ],
+                "operationId": "Ipv6filteroptionCreate",
                 "summary": "Create a ipv6filteroption object",
                 "description": "Creates a new ipv6filteroption object",
                 "parameters": [
@@ -4114,8 +4183,9 @@
         "/ipv6filteroption/{reference}": {
             "get": {
                 "tags": [
-                    "ipv6filteroption"
+                    "Ipv6filteroption"
                 ],
+                "operationId": "Ipv6filteroptionRead",
                 "summary": "Get a specific ipv6filteroption object",
                 "description": "Returns a specific ipv6filteroption object by reference",
                 "parameters": [
@@ -4170,8 +4240,9 @@
             },
             "put": {
                 "tags": [
-                    "ipv6filteroption"
+                    "Ipv6filteroption"
                 ],
+                "operationId": "Ipv6filteroptionUpdate",
                 "summary": "Update a ipv6filteroption object",
                 "description": "Updates a specific ipv6filteroption object by reference",
                 "parameters": [
@@ -4238,8 +4309,9 @@
             },
             "delete": {
                 "tags": [
-                    "ipv6filteroption"
+                    "Ipv6filteroption"
                 ],
+                "operationId": "Ipv6filteroptionDelete",
                 "summary": "Delete a ipv6filteroption object",
                 "description": "Deletes a specific ipv6filteroption object by reference",
                 "parameters": [
@@ -4280,8 +4352,9 @@
         "/ipv6fixedaddress": {
             "get": {
                 "tags": [
-                    "ipv6fixedaddress"
+                    "Ipv6fixedaddress"
                 ],
+                "operationId": "Ipv6fixedaddressList",
                 "summary": "Retrieve ipv6fixedaddress objects",
                 "description": "Returns a list of ipv6fixedaddress objects matching the search criteria",
                 "parameters": [
@@ -4342,8 +4415,9 @@
             },
             "post": {
                 "tags": [
-                    "ipv6fixedaddress"
+                    "Ipv6fixedaddress"
                 ],
+                "operationId": "Ipv6fixedaddressCreate",
                 "summary": "Create a ipv6fixedaddress object",
                 "description": "Creates a new ipv6fixedaddress object",
                 "parameters": [
@@ -4402,8 +4476,9 @@
         "/ipv6fixedaddress/{reference}": {
             "get": {
                 "tags": [
-                    "ipv6fixedaddress"
+                    "Ipv6fixedaddress"
                 ],
+                "operationId": "Ipv6fixedaddressRead",
                 "summary": "Get a specific ipv6fixedaddress object",
                 "description": "Returns a specific ipv6fixedaddress object by reference",
                 "parameters": [
@@ -4458,8 +4533,9 @@
             },
             "put": {
                 "tags": [
-                    "ipv6fixedaddress"
+                    "Ipv6fixedaddress"
                 ],
+                "operationId": "Ipv6fixedaddressUpdate",
                 "summary": "Update a ipv6fixedaddress object",
                 "description": "Updates a specific ipv6fixedaddress object by reference",
                 "parameters": [
@@ -4526,8 +4602,9 @@
             },
             "delete": {
                 "tags": [
-                    "ipv6fixedaddress"
+                    "Ipv6fixedaddress"
                 ],
+                "operationId": "Ipv6fixedaddressDelete",
                 "summary": "Delete a ipv6fixedaddress object",
                 "description": "Deletes a specific ipv6fixedaddress object by reference",
                 "parameters": [
@@ -4568,8 +4645,9 @@
         "/ipv6fixedaddresstemplate": {
             "get": {
                 "tags": [
-                    "ipv6fixedaddresstemplate"
+                    "Ipv6fixedaddresstemplate"
                 ],
+                "operationId": "Ipv6fixedaddresstemplateList",
                 "summary": "Retrieve ipv6fixedaddresstemplate objects",
                 "description": "Returns a list of ipv6fixedaddresstemplate objects matching the search criteria",
                 "parameters": [
@@ -4630,8 +4708,9 @@
             },
             "post": {
                 "tags": [
-                    "ipv6fixedaddresstemplate"
+                    "Ipv6fixedaddresstemplate"
                 ],
+                "operationId": "Ipv6fixedaddresstemplateCreate",
                 "summary": "Create a ipv6fixedaddresstemplate object",
                 "description": "Creates a new ipv6fixedaddresstemplate object",
                 "parameters": [
@@ -4690,8 +4769,9 @@
         "/ipv6fixedaddresstemplate/{reference}": {
             "get": {
                 "tags": [
-                    "ipv6fixedaddresstemplate"
+                    "Ipv6fixedaddresstemplate"
                 ],
+                "operationId": "Ipv6fixedaddresstemplateRead",
                 "summary": "Get a specific ipv6fixedaddresstemplate object",
                 "description": "Returns a specific ipv6fixedaddresstemplate object by reference",
                 "parameters": [
@@ -4746,8 +4826,9 @@
             },
             "put": {
                 "tags": [
-                    "ipv6fixedaddresstemplate"
+                    "Ipv6fixedaddresstemplate"
                 ],
+                "operationId": "Ipv6fixedaddresstemplateUpdate",
                 "summary": "Update a ipv6fixedaddresstemplate object",
                 "description": "Updates a specific ipv6fixedaddresstemplate object by reference",
                 "parameters": [
@@ -4814,8 +4895,9 @@
             },
             "delete": {
                 "tags": [
-                    "ipv6fixedaddresstemplate"
+                    "Ipv6fixedaddresstemplate"
                 ],
+                "operationId": "Ipv6fixedaddresstemplateDelete",
                 "summary": "Delete a ipv6fixedaddresstemplate object",
                 "description": "Deletes a specific ipv6fixedaddresstemplate object by reference",
                 "parameters": [
@@ -4856,8 +4938,9 @@
         "/ipv6range": {
             "get": {
                 "tags": [
-                    "ipv6range"
+                    "Ipv6range"
                 ],
+                "operationId": "Ipv6rangeList",
                 "summary": "Retrieve ipv6range objects",
                 "description": "Returns a list of ipv6range objects matching the search criteria",
                 "parameters": [
@@ -4918,8 +5001,9 @@
             },
             "post": {
                 "tags": [
-                    "ipv6range"
+                    "Ipv6range"
                 ],
+                "operationId": "Ipv6rangeCreate",
                 "summary": "Create a ipv6range object",
                 "description": "Creates a new ipv6range object",
                 "parameters": [
@@ -4978,8 +5062,9 @@
         "/ipv6range/{reference}": {
             "get": {
                 "tags": [
-                    "ipv6range"
+                    "Ipv6range"
                 ],
+                "operationId": "Ipv6rangeRead",
                 "summary": "Get a specific ipv6range object",
                 "description": "Returns a specific ipv6range object by reference",
                 "parameters": [
@@ -5034,8 +5119,9 @@
             },
             "put": {
                 "tags": [
-                    "ipv6range"
+                    "Ipv6range"
                 ],
+                "operationId": "Ipv6rangeUpdate",
                 "summary": "Update a ipv6range object",
                 "description": "Updates a specific ipv6range object by reference",
                 "parameters": [
@@ -5102,8 +5188,9 @@
             },
             "delete": {
                 "tags": [
-                    "ipv6range"
+                    "Ipv6range"
                 ],
+                "operationId": "Ipv6rangeDelete",
                 "summary": "Delete a ipv6range object",
                 "description": "Deletes a specific ipv6range object by reference",
                 "parameters": [
@@ -5144,8 +5231,9 @@
         "/ipv6rangetemplate": {
             "get": {
                 "tags": [
-                    "ipv6rangetemplate"
+                    "Ipv6rangetemplate"
                 ],
+                "operationId": "Ipv6rangetemplateList",
                 "summary": "Retrieve ipv6rangetemplate objects",
                 "description": "Returns a list of ipv6rangetemplate objects matching the search criteria",
                 "parameters": [
@@ -5206,8 +5294,9 @@
             },
             "post": {
                 "tags": [
-                    "ipv6rangetemplate"
+                    "Ipv6rangetemplate"
                 ],
+                "operationId": "Ipv6rangetemplateCreate",
                 "summary": "Create a ipv6rangetemplate object",
                 "description": "Creates a new ipv6rangetemplate object",
                 "parameters": [
@@ -5265,8 +5354,9 @@
         "/ipv6rangetemplate/{reference}": {
             "get": {
                 "tags": [
-                    "ipv6rangetemplate"
+                    "Ipv6rangetemplate"
                 ],
+                "operationId": "Ipv6rangetemplateRead",
                 "summary": "Get a specific ipv6rangetemplate object",
                 "description": "Returns a specific ipv6rangetemplate object by reference",
                 "parameters": [
@@ -5321,8 +5411,9 @@
             },
             "put": {
                 "tags": [
-                    "ipv6rangetemplate"
+                    "Ipv6rangetemplate"
                 ],
+                "operationId": "Ipv6rangetemplateUpdate",
                 "summary": "Update a ipv6rangetemplate object",
                 "description": "Updates a specific ipv6rangetemplate object by reference",
                 "parameters": [
@@ -5388,8 +5479,9 @@
             },
             "delete": {
                 "tags": [
-                    "ipv6rangetemplate"
+                    "Ipv6rangetemplate"
                 ],
+                "operationId": "Ipv6rangetemplateDelete",
                 "summary": "Delete a ipv6rangetemplate object",
                 "description": "Deletes a specific ipv6rangetemplate object by reference",
                 "parameters": [
@@ -5430,8 +5522,9 @@
         "/ipv6sharednetwork": {
             "get": {
                 "tags": [
-                    "ipv6sharednetwork"
+                    "Ipv6sharednetwork"
                 ],
+                "operationId": "Ipv6sharednetworkList",
                 "summary": "Retrieve ipv6sharednetwork objects",
                 "description": "Returns a list of ipv6sharednetwork objects matching the search criteria",
                 "parameters": [
@@ -5492,8 +5585,9 @@
             },
             "post": {
                 "tags": [
-                    "ipv6sharednetwork"
+                    "Ipv6sharednetwork"
                 ],
+                "operationId": "Ipv6sharednetworkCreate",
                 "summary": "Create a ipv6sharednetwork object",
                 "description": "Creates a new ipv6sharednetwork object",
                 "parameters": [
@@ -5552,8 +5646,9 @@
         "/ipv6sharednetwork/{reference}": {
             "get": {
                 "tags": [
-                    "ipv6sharednetwork"
+                    "Ipv6sharednetwork"
                 ],
+                "operationId": "Ipv6sharednetworkRead",
                 "summary": "Get a specific ipv6sharednetwork object",
                 "description": "Returns a specific ipv6sharednetwork object by reference",
                 "parameters": [
@@ -5608,8 +5703,9 @@
             },
             "put": {
                 "tags": [
-                    "ipv6sharednetwork"
+                    "Ipv6sharednetwork"
                 ],
+                "operationId": "Ipv6sharednetworkUpdate",
                 "summary": "Update a ipv6sharednetwork object",
                 "description": "Updates a specific ipv6sharednetwork object by reference",
                 "parameters": [
@@ -5676,8 +5772,9 @@
             },
             "delete": {
                 "tags": [
-                    "ipv6sharednetwork"
+                    "Ipv6sharednetwork"
                 ],
+                "operationId": "Ipv6sharednetworkDelete",
                 "summary": "Delete a ipv6sharednetwork object",
                 "description": "Deletes a specific ipv6sharednetwork object by reference",
                 "parameters": [
@@ -5718,8 +5815,9 @@
         "/lease": {
             "get": {
                 "tags": [
-                    "lease"
+                    "Lease"
                 ],
+                "operationId": "LeaseList",
                 "summary": "Retrieve lease objects",
                 "description": "Returns a list of lease objects matching the search criteria",
                 "parameters": [
@@ -5782,8 +5880,9 @@
         "/lease/{reference}": {
             "get": {
                 "tags": [
-                    "lease"
+                    "Lease"
                 ],
+                "operationId": "LeaseRead",
                 "summary": "Get a specific lease object",
                 "description": "Returns a specific lease object by reference",
                 "parameters": [
@@ -5838,8 +5937,9 @@
             },
             "delete": {
                 "tags": [
-                    "lease"
+                    "Lease"
                 ],
+                "operationId": "LeaseDelete",
                 "summary": "Delete a lease object",
                 "description": "Deletes a specific lease object by reference",
                 "parameters": [
@@ -5880,8 +5980,9 @@
         "/macfilteraddress": {
             "get": {
                 "tags": [
-                    "macfilteraddress"
+                    "Macfilteraddress"
                 ],
+                "operationId": "MacfilteraddressList",
                 "summary": "Retrieve macfilteraddress objects",
                 "description": "Returns a list of macfilteraddress objects matching the search criteria",
                 "parameters": [
@@ -5942,8 +6043,9 @@
             },
             "post": {
                 "tags": [
-                    "macfilteraddress"
+                    "Macfilteraddress"
                 ],
+                "operationId": "MacfilteraddressCreate",
                 "summary": "Create a macfilteraddress object",
                 "description": "Creates a new macfilteraddress object",
                 "parameters": [
@@ -6002,8 +6104,9 @@
         "/macfilteraddress/{reference}": {
             "get": {
                 "tags": [
-                    "macfilteraddress"
+                    "Macfilteraddress"
                 ],
+                "operationId": "MacfilteraddressRead",
                 "summary": "Get a specific macfilteraddress object",
                 "description": "Returns a specific macfilteraddress object by reference",
                 "parameters": [
@@ -6058,8 +6161,9 @@
             },
             "put": {
                 "tags": [
-                    "macfilteraddress"
+                    "Macfilteraddress"
                 ],
+                "operationId": "MacfilteraddressUpdate",
                 "summary": "Update a macfilteraddress object",
                 "description": "Updates a specific macfilteraddress object by reference",
                 "parameters": [
@@ -6126,8 +6230,9 @@
             },
             "delete": {
                 "tags": [
-                    "macfilteraddress"
+                    "Macfilteraddress"
                 ],
+                "operationId": "MacfilteraddressDelete",
                 "summary": "Delete a macfilteraddress object",
                 "description": "Deletes a specific macfilteraddress object by reference",
                 "parameters": [
@@ -6168,8 +6273,9 @@
         "/range": {
             "get": {
                 "tags": [
-                    "range"
+                    "Range"
                 ],
+                "operationId": "RangeList",
                 "summary": "Retrieve range objects",
                 "description": "Returns a list of range objects matching the search criteria",
                 "parameters": [
@@ -6230,8 +6336,9 @@
             },
             "post": {
                 "tags": [
-                    "range"
+                    "Range"
                 ],
+                "operationId": "RangeCreate",
                 "summary": "Create a range object",
                 "description": "Creates a new range object",
                 "parameters": [
@@ -6290,8 +6397,9 @@
         "/range/{reference}": {
             "get": {
                 "tags": [
-                    "range"
+                    "Range"
                 ],
+                "operationId": "RangeRead",
                 "summary": "Get a specific range object",
                 "description": "Returns a specific range object by reference",
                 "parameters": [
@@ -6346,8 +6454,9 @@
             },
             "put": {
                 "tags": [
-                    "range"
+                    "Range"
                 ],
+                "operationId": "RangeUpdate",
                 "summary": "Update a range object",
                 "description": "Updates a specific range object by reference",
                 "parameters": [
@@ -6414,8 +6523,9 @@
             },
             "delete": {
                 "tags": [
-                    "range"
+                    "Range"
                 ],
+                "operationId": "RangeDelete",
                 "summary": "Delete a range object",
                 "description": "Deletes a specific range object by reference",
                 "parameters": [
@@ -6456,8 +6566,9 @@
         "/rangetemplate": {
             "get": {
                 "tags": [
-                    "rangetemplate"
+                    "Rangetemplate"
                 ],
+                "operationId": "RangetemplateList",
                 "summary": "Retrieve rangetemplate objects",
                 "description": "Returns a list of rangetemplate objects matching the search criteria",
                 "parameters": [
@@ -6518,8 +6629,9 @@
             },
             "post": {
                 "tags": [
-                    "rangetemplate"
+                    "Rangetemplate"
                 ],
+                "operationId": "RangetemplateCreate",
                 "summary": "Create a rangetemplate object",
                 "description": "Creates a new rangetemplate object",
                 "parameters": [
@@ -6578,8 +6690,9 @@
         "/rangetemplate/{reference}": {
             "get": {
                 "tags": [
-                    "rangetemplate"
+                    "Rangetemplate"
                 ],
+                "operationId": "RangetemplateRead",
                 "summary": "Get a specific rangetemplate object",
                 "description": "Returns a specific rangetemplate object by reference",
                 "parameters": [
@@ -6634,8 +6747,9 @@
             },
             "put": {
                 "tags": [
-                    "rangetemplate"
+                    "Rangetemplate"
                 ],
+                "operationId": "RangetemplateUpdate",
                 "summary": "Update a rangetemplate object",
                 "description": "Updates a specific rangetemplate object by reference",
                 "parameters": [
@@ -6702,8 +6816,9 @@
             },
             "delete": {
                 "tags": [
-                    "rangetemplate"
+                    "Rangetemplate"
                 ],
+                "operationId": "RangetemplateDelete",
                 "summary": "Delete a rangetemplate object",
                 "description": "Deletes a specific rangetemplate object by reference",
                 "parameters": [
@@ -6744,8 +6859,9 @@
         "/roaminghost": {
             "get": {
                 "tags": [
-                    "roaminghost"
+                    "Roaminghost"
                 ],
+                "operationId": "RoaminghostList",
                 "summary": "Retrieve roaminghost objects",
                 "description": "Returns a list of roaminghost objects matching the search criteria",
                 "parameters": [
@@ -6806,8 +6922,9 @@
             },
             "post": {
                 "tags": [
-                    "roaminghost"
+                    "Roaminghost"
                 ],
+                "operationId": "RoaminghostCreate",
                 "summary": "Create a roaminghost object",
                 "description": "Creates a new roaminghost object",
                 "parameters": [
@@ -6866,8 +6983,9 @@
         "/roaminghost/{reference}": {
             "get": {
                 "tags": [
-                    "roaminghost"
+                    "Roaminghost"
                 ],
+                "operationId": "RoaminghostRead",
                 "summary": "Get a specific roaminghost object",
                 "description": "Returns a specific roaminghost object by reference",
                 "parameters": [
@@ -6922,8 +7040,9 @@
             },
             "put": {
                 "tags": [
-                    "roaminghost"
+                    "Roaminghost"
                 ],
+                "operationId": "RoaminghostUpdate",
                 "summary": "Update a roaminghost object",
                 "description": "Updates a specific roaminghost object by reference",
                 "parameters": [
@@ -6990,8 +7109,9 @@
             },
             "delete": {
                 "tags": [
-                    "roaminghost"
+                    "Roaminghost"
                 ],
+                "operationId": "RoaminghostDelete",
                 "summary": "Delete a roaminghost object",
                 "description": "Deletes a specific roaminghost object by reference",
                 "parameters": [
@@ -7032,8 +7152,9 @@
         "/sharednetwork": {
             "get": {
                 "tags": [
-                    "sharednetwork"
+                    "Sharednetwork"
                 ],
+                "operationId": "SharednetworkList",
                 "summary": "Retrieve sharednetwork objects",
                 "description": "Returns a list of sharednetwork objects matching the search criteria",
                 "parameters": [
@@ -7094,8 +7215,9 @@
             },
             "post": {
                 "tags": [
-                    "sharednetwork"
+                    "Sharednetwork"
                 ],
+                "operationId": "SharednetworkCreate",
                 "summary": "Create a sharednetwork object",
                 "description": "Creates a new sharednetwork object",
                 "parameters": [
@@ -7154,8 +7276,9 @@
         "/sharednetwork/{reference}": {
             "get": {
                 "tags": [
-                    "sharednetwork"
+                    "Sharednetwork"
                 ],
+                "operationId": "SharednetworkRead",
                 "summary": "Get a specific sharednetwork object",
                 "description": "Returns a specific sharednetwork object by reference",
                 "parameters": [
@@ -7210,8 +7333,9 @@
             },
             "put": {
                 "tags": [
-                    "sharednetwork"
+                    "Sharednetwork"
                 ],
+                "operationId": "SharednetworkUpdate",
                 "summary": "Update a sharednetwork object",
                 "description": "Updates a specific sharednetwork object by reference",
                 "parameters": [
@@ -7278,8 +7402,9 @@
             },
             "delete": {
                 "tags": [
-                    "sharednetwork"
+                    "Sharednetwork"
                 ],
+                "operationId": "SharednetworkDelete",
                 "summary": "Delete a sharednetwork object",
                 "description": "Deletes a specific sharednetwork object by reference",
                 "parameters": [
@@ -7320,8 +7445,9 @@
         "/orderedranges": {
             "get": {
                 "tags": [
-                    "orderedranges"
+                    "Orderedranges"
                 ],
+                "operationId": "OrderedrangesList",
                 "summary": "Retrieve orderedranges objects",
                 "description": "Returns a list of orderedranges objects matching the search criteria",
                 "parameters": [
@@ -7384,8 +7510,9 @@
         "/orderedranges/{reference}": {
             "get": {
                 "tags": [
-                    "orderedranges"
+                    "Orderedranges"
                 ],
+                "operationId": "OrderedrangesRead",
                 "summary": "Get a specific orderedranges object",
                 "description": "Returns a specific orderedranges object by reference",
                 "parameters": [
@@ -7440,8 +7567,9 @@
             },
             "put": {
                 "tags": [
-                    "orderedranges"
+                    "Orderedranges"
                 ],
+                "operationId": "OrderedrangesUpdate",
                 "summary": "Update a orderedranges object",
                 "description": "Updates a specific orderedranges object by reference",
                 "parameters": [
@@ -7771,25 +7899,6 @@
                                 }
                             }
                         }
-                    }
-                ]
-            },
-            "CreateDhcpStatisticsResponse": {
-                "oneOf": [
-                    {
-                        "description": "The response format to create __DhcpStatistics__ in object format.",
-                        "type": "object",
-                        "title": "CreateDhcpStatisticsResponseAsObject",
-                        "properties": {
-                            "result": {
-                                "$ref": "#/components/schemas/DhcpStatistics"
-                            }
-                        }
-                    },
-                    {
-                        "description": "The response format to create __DhcpStatistics__.",
-                        "type": "string",
-                        "title": "CreateDhcpStatisticsResponse"
                     }
                 ]
             },
@@ -15412,25 +15521,6 @@
                     }
                 ]
             },
-            "CreateLeaseResponse": {
-                "oneOf": [
-                    {
-                        "description": "The response format to create __Lease__ in object format.",
-                        "type": "object",
-                        "title": "CreateLeaseResponseAsObject",
-                        "properties": {
-                            "result": {
-                                "$ref": "#/components/schemas/Lease"
-                            }
-                        }
-                    },
-                    {
-                        "description": "The response format to create __Lease__.",
-                        "type": "string",
-                        "title": "CreateLeaseResponse"
-                    }
-                ]
-            },
             "GetLeaseResponse": {
                 "oneOf": [
                     {
@@ -15924,6 +16014,7 @@
                     "lease_scavenge_time": {
                         "type": "integer",
                         "description": "An integer that specifies the period of time (in seconds) that frees and backs up leases remained in the database before they are automatically deleted. To disable lease scavenging, set the parameter to -1. The minimum positive value must be greater than 86400 seconds (1 day).",
+                        "format": "int64",
                         "example": 1
                     },
                     "logic_filter_rules": {
@@ -17280,6 +17371,7 @@
                     "lease_scavenge_time": {
                         "type": "integer",
                         "description": "An integer that specifies the period of time (in seconds) that frees and backs up leases remained in the database before they are automatically deleted. To disable lease scavenging, set the parameter to -1. The minimum positive value must be greater than 86400 seconds (1 day).",
+                        "format": "int64",
                         "example": 1
                     },
                     "logic_filter_rules": {
@@ -18451,6 +18543,7 @@
                     "lease_scavenge_time": {
                         "type": "integer",
                         "description": "An integer that specifies the period of time (in seconds) that frees and backs up leases remained in the database before they are automatically deleted. To disable lease scavenging, set the parameter to -1. The minimum positive value must be greater than 86400 seconds (1 day).",
+                        "format": "int64",
                         "example": 1
                     },
                     "logic_filter_rules": {
@@ -18811,25 +18904,6 @@
                                 }
                             }
                         }
-                    }
-                ]
-            },
-            "CreateOrderedrangesResponse": {
-                "oneOf": [
-                    {
-                        "description": "The response format to create __Orderedranges__ in object format.",
-                        "type": "object",
-                        "title": "CreateOrderedrangesResponseAsObject",
-                        "properties": {
-                            "result": {
-                                "$ref": "#/components/schemas/Orderedranges"
-                            }
-                        }
-                    },
-                    {
-                        "description": "The response format to create __Orderedranges__.",
-                        "type": "string",
-                        "title": "CreateOrderedrangesResponse"
                     }
                 ]
             },

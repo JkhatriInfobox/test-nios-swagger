@@ -22,83 +22,83 @@
     ],
     "tags": [
         {
-            "name": "ipv4address",
+            "name": "Ipv4address",
             "description": "Operations for ipv4address objects"
         },
         {
-            "name": "ipv6address",
+            "name": "Ipv6address",
             "description": "Operations for ipv6address objects"
         },
         {
-            "name": "network",
+            "name": "Network",
             "description": "Operations for network objects"
         },
         {
-            "name": "networkcontainer",
+            "name": "Networkcontainer",
             "description": "Operations for networkcontainer objects"
         },
         {
-            "name": "networktemplate",
+            "name": "Networktemplate",
             "description": "Operations for networktemplate objects"
         },
         {
-            "name": "networkview",
+            "name": "Networkview",
             "description": "Operations for networkview objects"
         },
         {
-            "name": "ipv6network",
+            "name": "Ipv6network",
             "description": "Operations for ipv6network objects"
         },
         {
-            "name": "ipv6networkcontainer",
+            "name": "Ipv6networkcontainer",
             "description": "Operations for ipv6networkcontainer objects"
         },
         {
-            "name": "ipv6networktemplate",
+            "name": "Ipv6networktemplate",
             "description": "Operations for ipv6networktemplate objects"
         },
         {
-            "name": "ipam_statistics",
+            "name": "IpamStatistics",
             "description": "Operations for ipam:statistics objects"
         },
         {
-            "name": "vlan",
+            "name": "Vlan",
             "description": "Operations for vlan objects"
         },
         {
-            "name": "vlanview",
+            "name": "Vlanview",
             "description": "Operations for vlanview objects"
         },
         {
-            "name": "vlanrange",
+            "name": "Vlanrange",
             "description": "Operations for vlanrange objects"
         },
         {
-            "name": "bulkhost",
+            "name": "Bulkhost",
             "description": "Operations for bulkhost objects"
         },
         {
-            "name": "bulkhostnametemplate",
+            "name": "Bulkhostnametemplate",
             "description": "Operations for bulkhostnametemplate objects"
         },
         {
-            "name": "discoverytask",
+            "name": "Discoverytask",
             "description": "Operations for discoverytask objects"
         },
         {
-            "name": "network_discovery",
+            "name": "NetworkDiscovery",
             "description": "Operations for network_discovery objects"
         },
         {
-            "name": "superhost",
+            "name": "Superhost",
             "description": "Operations for superhost objects"
         },
         {
-            "name": "superhostchild",
+            "name": "Superhostchild",
             "description": "Operations for superhostchild objects"
         },
         {
-            "name": "hostnamerewritepolicy",
+            "name": "Hostnamerewritepolicy",
             "description": "Operations for hostnamerewritepolicy objects"
         }
     ],
@@ -106,8 +106,9 @@
         "/ipv4address": {
             "get": {
                 "tags": [
-                    "ipv4address"
+                    "Ipv4address"
                 ],
+                "operationId": "Ipv4addressList",
                 "summary": "Retrieve ipv4address objects",
                 "description": "Returns a list of ipv4address objects matching the search criteria",
                 "parameters": [
@@ -170,8 +171,9 @@
         "/ipv4address/{reference}": {
             "get": {
                 "tags": [
-                    "ipv4address"
+                    "Ipv4address"
                 ],
+                "operationId": "Ipv4addressRead",
                 "summary": "Get a specific ipv4address object",
                 "description": "Returns a specific ipv4address object by reference",
                 "parameters": [
@@ -226,8 +228,9 @@
             },
             "put": {
                 "tags": [
-                    "ipv4address"
+                    "Ipv4address"
                 ],
+                "operationId": "Ipv4addressUpdate",
                 "summary": "Update a ipv4address object",
                 "description": "Updates a specific ipv4address object by reference",
                 "parameters": [
@@ -294,8 +297,9 @@
             },
             "delete": {
                 "tags": [
-                    "ipv4address"
+                    "Ipv4address"
                 ],
+                "operationId": "Ipv4addressDelete",
                 "summary": "Delete a ipv4address object",
                 "description": "Deletes a specific ipv4address object by reference",
                 "parameters": [
@@ -336,8 +340,9 @@
         "/ipv6address": {
             "get": {
                 "tags": [
-                    "ipv6address"
+                    "Ipv6address"
                 ],
+                "operationId": "Ipv6addressList",
                 "summary": "Retrieve ipv6address objects",
                 "description": "Returns a list of ipv6address objects matching the search criteria",
                 "parameters": [
@@ -400,8 +405,9 @@
         "/ipv6address/{reference}": {
             "get": {
                 "tags": [
-                    "ipv6address"
+                    "Ipv6address"
                 ],
+                "operationId": "Ipv6addressRead",
                 "summary": "Get a specific ipv6address object",
                 "description": "Returns a specific ipv6address object by reference",
                 "parameters": [
@@ -456,8 +462,9 @@
             },
             "put": {
                 "tags": [
-                    "ipv6address"
+                    "Ipv6address"
                 ],
+                "operationId": "Ipv6addressUpdate",
                 "summary": "Update a ipv6address object",
                 "description": "Updates a specific ipv6address object by reference",
                 "parameters": [
@@ -524,8 +531,9 @@
             },
             "delete": {
                 "tags": [
-                    "ipv6address"
+                    "Ipv6address"
                 ],
+                "operationId": "Ipv6addressDelete",
                 "summary": "Delete a ipv6address object",
                 "description": "Deletes a specific ipv6address object by reference",
                 "parameters": [
@@ -566,8 +574,9 @@
         "/network": {
             "get": {
                 "tags": [
-                    "network"
+                    "Network"
                 ],
+                "operationId": "NetworkList",
                 "summary": "Retrieve network objects",
                 "description": "Returns a list of network objects matching the search criteria",
                 "parameters": [
@@ -628,8 +637,9 @@
             },
             "post": {
                 "tags": [
-                    "network"
+                    "Network"
                 ],
+                "operationId": "NetworkCreate",
                 "summary": "Create a network object",
                 "description": "Creates a new network object",
                 "parameters": [
@@ -692,8 +702,9 @@
         "/network/{reference}": {
             "get": {
                 "tags": [
-                    "network"
+                    "Network"
                 ],
+                "operationId": "NetworkRead",
                 "summary": "Get a specific network object",
                 "description": "Returns a specific network object by reference",
                 "parameters": [
@@ -748,8 +759,9 @@
             },
             "put": {
                 "tags": [
-                    "network"
+                    "Network"
                 ],
+                "operationId": "NetworkUpdate",
                 "summary": "Update a network object",
                 "description": "Updates a specific network object by reference",
                 "parameters": [
@@ -812,12 +824,17 @@
                         "basicAuth": []
                     }
                 ],
-                "x-sdk-default-ext-attrs": true
+                "x-sdk-default-ext-attrs": true,
+                "x-sdk-put-function-call": [
+                    "Network"
+                ],
+                "x-tf-function-call": true
             },
             "delete": {
                 "tags": [
-                    "network"
+                    "Network"
                 ],
+                "operationId": "NetworkDelete",
                 "summary": "Delete a network object",
                 "description": "Deletes a specific network object by reference",
                 "parameters": [
@@ -858,8 +875,9 @@
         "/networkcontainer": {
             "get": {
                 "tags": [
-                    "networkcontainer"
+                    "Networkcontainer"
                 ],
+                "operationId": "NetworkcontainerList",
                 "summary": "Retrieve networkcontainer objects",
                 "description": "Returns a list of networkcontainer objects matching the search criteria",
                 "parameters": [
@@ -920,8 +938,9 @@
             },
             "post": {
                 "tags": [
-                    "networkcontainer"
+                    "Networkcontainer"
                 ],
+                "operationId": "NetworkcontainerCreate",
                 "summary": "Create a networkcontainer object",
                 "description": "Creates a new networkcontainer object",
                 "parameters": [
@@ -984,8 +1003,9 @@
         "/networkcontainer/{reference}": {
             "get": {
                 "tags": [
-                    "networkcontainer"
+                    "Networkcontainer"
                 ],
+                "operationId": "NetworkcontainerRead",
                 "summary": "Get a specific networkcontainer object",
                 "description": "Returns a specific networkcontainer object by reference",
                 "parameters": [
@@ -1040,8 +1060,9 @@
             },
             "put": {
                 "tags": [
-                    "networkcontainer"
+                    "Networkcontainer"
                 ],
+                "operationId": "NetworkcontainerUpdate",
                 "summary": "Update a networkcontainer object",
                 "description": "Updates a specific networkcontainer object by reference",
                 "parameters": [
@@ -1104,12 +1125,17 @@
                         "basicAuth": []
                     }
                 ],
-                "x-sdk-default-ext-attrs": true
+                "x-sdk-default-ext-attrs": true,
+                "x-sdk-put-function-call": [
+                    "Network"
+                ],
+                "x-tf-function-call": true
             },
             "delete": {
                 "tags": [
-                    "networkcontainer"
+                    "Networkcontainer"
                 ],
+                "operationId": "NetworkcontainerDelete",
                 "summary": "Delete a networkcontainer object",
                 "description": "Deletes a specific networkcontainer object by reference",
                 "parameters": [
@@ -1159,8 +1185,9 @@
         "/networktemplate": {
             "get": {
                 "tags": [
-                    "networktemplate"
+                    "Networktemplate"
                 ],
+                "operationId": "NetworktemplateList",
                 "summary": "Retrieve networktemplate objects",
                 "description": "Returns a list of networktemplate objects matching the search criteria",
                 "parameters": [
@@ -1221,8 +1248,9 @@
             },
             "post": {
                 "tags": [
-                    "networktemplate"
+                    "Networktemplate"
                 ],
+                "operationId": "NetworktemplateCreate",
                 "summary": "Create a networktemplate object",
                 "description": "Creates a new networktemplate object",
                 "parameters": [
@@ -1281,8 +1309,9 @@
         "/networktemplate/{reference}": {
             "get": {
                 "tags": [
-                    "networktemplate"
+                    "Networktemplate"
                 ],
+                "operationId": "NetworktemplateRead",
                 "summary": "Get a specific networktemplate object",
                 "description": "Returns a specific networktemplate object by reference",
                 "parameters": [
@@ -1337,8 +1366,9 @@
             },
             "put": {
                 "tags": [
-                    "networktemplate"
+                    "Networktemplate"
                 ],
+                "operationId": "NetworktemplateUpdate",
                 "summary": "Update a networktemplate object",
                 "description": "Updates a specific networktemplate object by reference",
                 "parameters": [
@@ -1405,8 +1435,9 @@
             },
             "delete": {
                 "tags": [
-                    "networktemplate"
+                    "Networktemplate"
                 ],
+                "operationId": "NetworktemplateDelete",
                 "summary": "Delete a networktemplate object",
                 "description": "Deletes a specific networktemplate object by reference",
                 "parameters": [
@@ -1447,8 +1478,9 @@
         "/networkview": {
             "get": {
                 "tags": [
-                    "networkview"
+                    "Networkview"
                 ],
+                "operationId": "NetworkviewList",
                 "summary": "Retrieve networkview objects",
                 "description": "Returns a list of networkview objects matching the search criteria",
                 "parameters": [
@@ -1509,8 +1541,9 @@
             },
             "post": {
                 "tags": [
-                    "networkview"
+                    "Networkview"
                 ],
+                "operationId": "NetworkviewCreate",
                 "summary": "Create a networkview object",
                 "description": "Creates a new networkview object",
                 "parameters": [
@@ -1569,8 +1602,9 @@
         "/networkview/{reference}": {
             "get": {
                 "tags": [
-                    "networkview"
+                    "Networkview"
                 ],
+                "operationId": "NetworkviewRead",
                 "summary": "Get a specific networkview object",
                 "description": "Returns a specific networkview object by reference",
                 "parameters": [
@@ -1625,8 +1659,9 @@
             },
             "put": {
                 "tags": [
-                    "networkview"
+                    "Networkview"
                 ],
+                "operationId": "NetworkviewUpdate",
                 "summary": "Update a networkview object",
                 "description": "Updates a specific networkview object by reference",
                 "parameters": [
@@ -1693,8 +1728,9 @@
             },
             "delete": {
                 "tags": [
-                    "networkview"
+                    "Networkview"
                 ],
+                "operationId": "NetworkviewDelete",
                 "summary": "Delete a networkview object",
                 "description": "Deletes a specific networkview object by reference",
                 "parameters": [
@@ -1735,8 +1771,9 @@
         "/ipv6network": {
             "get": {
                 "tags": [
-                    "ipv6network"
+                    "Ipv6network"
                 ],
+                "operationId": "Ipv6networkList",
                 "summary": "Retrieve ipv6network objects",
                 "description": "Returns a list of ipv6network objects matching the search criteria",
                 "parameters": [
@@ -1797,8 +1834,9 @@
             },
             "post": {
                 "tags": [
-                    "ipv6network"
+                    "Ipv6network"
                 ],
+                "operationId": "Ipv6networkCreate",
                 "summary": "Create a ipv6network object",
                 "description": "Creates a new ipv6network object",
                 "parameters": [
@@ -1857,8 +1895,9 @@
         "/ipv6network/{reference}": {
             "get": {
                 "tags": [
-                    "ipv6network"
+                    "Ipv6network"
                 ],
+                "operationId": "Ipv6networkRead",
                 "summary": "Get a specific ipv6network object",
                 "description": "Returns a specific ipv6network object by reference",
                 "parameters": [
@@ -1913,8 +1952,9 @@
             },
             "put": {
                 "tags": [
-                    "ipv6network"
+                    "Ipv6network"
                 ],
+                "operationId": "Ipv6networkUpdate",
                 "summary": "Update a ipv6network object",
                 "description": "Updates a specific ipv6network object by reference",
                 "parameters": [
@@ -1981,8 +2021,9 @@
             },
             "delete": {
                 "tags": [
-                    "ipv6network"
+                    "Ipv6network"
                 ],
+                "operationId": "Ipv6networkDelete",
                 "summary": "Delete a ipv6network object",
                 "description": "Deletes a specific ipv6network object by reference",
                 "parameters": [
@@ -2023,8 +2064,9 @@
         "/ipv6networkcontainer": {
             "get": {
                 "tags": [
-                    "ipv6networkcontainer"
+                    "Ipv6networkcontainer"
                 ],
+                "operationId": "Ipv6networkcontainerList",
                 "summary": "Retrieve ipv6networkcontainer objects",
                 "description": "Returns a list of ipv6networkcontainer objects matching the search criteria",
                 "parameters": [
@@ -2085,8 +2127,9 @@
             },
             "post": {
                 "tags": [
-                    "ipv6networkcontainer"
+                    "Ipv6networkcontainer"
                 ],
+                "operationId": "Ipv6networkcontainerCreate",
                 "summary": "Create a ipv6networkcontainer object",
                 "description": "Creates a new ipv6networkcontainer object",
                 "parameters": [
@@ -2145,8 +2188,9 @@
         "/ipv6networkcontainer/{reference}": {
             "get": {
                 "tags": [
-                    "ipv6networkcontainer"
+                    "Ipv6networkcontainer"
                 ],
+                "operationId": "Ipv6networkcontainerRead",
                 "summary": "Get a specific ipv6networkcontainer object",
                 "description": "Returns a specific ipv6networkcontainer object by reference",
                 "parameters": [
@@ -2201,8 +2245,9 @@
             },
             "put": {
                 "tags": [
-                    "ipv6networkcontainer"
+                    "Ipv6networkcontainer"
                 ],
+                "operationId": "Ipv6networkcontainerUpdate",
                 "summary": "Update a ipv6networkcontainer object",
                 "description": "Updates a specific ipv6networkcontainer object by reference",
                 "parameters": [
@@ -2269,8 +2314,9 @@
             },
             "delete": {
                 "tags": [
-                    "ipv6networkcontainer"
+                    "Ipv6networkcontainer"
                 ],
+                "operationId": "Ipv6networkcontainerDelete",
                 "summary": "Delete a ipv6networkcontainer object",
                 "description": "Deletes a specific ipv6networkcontainer object by reference",
                 "parameters": [
@@ -2320,8 +2366,9 @@
         "/ipv6networktemplate": {
             "get": {
                 "tags": [
-                    "ipv6networktemplate"
+                    "Ipv6networktemplate"
                 ],
+                "operationId": "Ipv6networktemplateList",
                 "summary": "Retrieve ipv6networktemplate objects",
                 "description": "Returns a list of ipv6networktemplate objects matching the search criteria",
                 "parameters": [
@@ -2382,8 +2429,9 @@
             },
             "post": {
                 "tags": [
-                    "ipv6networktemplate"
+                    "Ipv6networktemplate"
                 ],
+                "operationId": "Ipv6networktemplateCreate",
                 "summary": "Create a ipv6networktemplate object",
                 "description": "Creates a new ipv6networktemplate object",
                 "parameters": [
@@ -2442,8 +2490,9 @@
         "/ipv6networktemplate/{reference}": {
             "get": {
                 "tags": [
-                    "ipv6networktemplate"
+                    "Ipv6networktemplate"
                 ],
+                "operationId": "Ipv6networktemplateRead",
                 "summary": "Get a specific ipv6networktemplate object",
                 "description": "Returns a specific ipv6networktemplate object by reference",
                 "parameters": [
@@ -2498,8 +2547,9 @@
             },
             "put": {
                 "tags": [
-                    "ipv6networktemplate"
+                    "Ipv6networktemplate"
                 ],
+                "operationId": "Ipv6networktemplateUpdate",
                 "summary": "Update a ipv6networktemplate object",
                 "description": "Updates a specific ipv6networktemplate object by reference",
                 "parameters": [
@@ -2566,8 +2616,9 @@
             },
             "delete": {
                 "tags": [
-                    "ipv6networktemplate"
+                    "Ipv6networktemplate"
                 ],
+                "operationId": "Ipv6networktemplateDelete",
                 "summary": "Delete a ipv6networktemplate object",
                 "description": "Deletes a specific ipv6networktemplate object by reference",
                 "parameters": [
@@ -2608,8 +2659,9 @@
         "/ipam:statistics": {
             "get": {
                 "tags": [
-                    "ipam_statistics"
+                    "IpamStatistics"
                 ],
+                "operationId": "IpamStatisticsList",
                 "summary": "Retrieve ipam:statistics objects",
                 "description": "Returns a list of ipam:statistics objects matching the search criteria",
                 "parameters": [
@@ -2672,8 +2724,9 @@
         "/ipam:statistics/{reference}": {
             "get": {
                 "tags": [
-                    "ipam_statistics"
+                    "IpamStatistics"
                 ],
+                "operationId": "IpamStatisticsRead",
                 "summary": "Get a specific ipam:statistics object",
                 "description": "Returns a specific ipam:statistics object by reference",
                 "parameters": [
@@ -2730,8 +2783,9 @@
         "/vlan": {
             "get": {
                 "tags": [
-                    "vlan"
+                    "Vlan"
                 ],
+                "operationId": "VlanList",
                 "summary": "Retrieve vlan objects",
                 "description": "Returns a list of vlan objects matching the search criteria",
                 "parameters": [
@@ -2792,8 +2846,9 @@
             },
             "post": {
                 "tags": [
-                    "vlan"
+                    "Vlan"
                 ],
+                "operationId": "VlanCreate",
                 "summary": "Create a vlan object",
                 "description": "Creates a new vlan object",
                 "parameters": [
@@ -2852,8 +2907,9 @@
         "/vlan/{reference}": {
             "get": {
                 "tags": [
-                    "vlan"
+                    "Vlan"
                 ],
+                "operationId": "VlanRead",
                 "summary": "Get a specific vlan object",
                 "description": "Returns a specific vlan object by reference",
                 "parameters": [
@@ -2908,8 +2964,9 @@
             },
             "put": {
                 "tags": [
-                    "vlan"
+                    "Vlan"
                 ],
+                "operationId": "VlanUpdate",
                 "summary": "Update a vlan object",
                 "description": "Updates a specific vlan object by reference",
                 "parameters": [
@@ -2976,8 +3033,9 @@
             },
             "delete": {
                 "tags": [
-                    "vlan"
+                    "Vlan"
                 ],
+                "operationId": "VlanDelete",
                 "summary": "Delete a vlan object",
                 "description": "Deletes a specific vlan object by reference",
                 "parameters": [
@@ -3018,8 +3076,9 @@
         "/vlanview": {
             "get": {
                 "tags": [
-                    "vlanview"
+                    "Vlanview"
                 ],
+                "operationId": "VlanviewList",
                 "summary": "Retrieve vlanview objects",
                 "description": "Returns a list of vlanview objects matching the search criteria",
                 "parameters": [
@@ -3080,8 +3139,9 @@
             },
             "post": {
                 "tags": [
-                    "vlanview"
+                    "Vlanview"
                 ],
+                "operationId": "VlanviewCreate",
                 "summary": "Create a vlanview object",
                 "description": "Creates a new vlanview object",
                 "parameters": [
@@ -3140,8 +3200,9 @@
         "/vlanview/{reference}": {
             "get": {
                 "tags": [
-                    "vlanview"
+                    "Vlanview"
                 ],
+                "operationId": "VlanviewRead",
                 "summary": "Get a specific vlanview object",
                 "description": "Returns a specific vlanview object by reference",
                 "parameters": [
@@ -3196,8 +3257,9 @@
             },
             "put": {
                 "tags": [
-                    "vlanview"
+                    "Vlanview"
                 ],
+                "operationId": "VlanviewUpdate",
                 "summary": "Update a vlanview object",
                 "description": "Updates a specific vlanview object by reference",
                 "parameters": [
@@ -3264,8 +3326,9 @@
             },
             "delete": {
                 "tags": [
-                    "vlanview"
+                    "Vlanview"
                 ],
+                "operationId": "VlanviewDelete",
                 "summary": "Delete a vlanview object",
                 "description": "Deletes a specific vlanview object by reference",
                 "parameters": [
@@ -3306,8 +3369,9 @@
         "/vlanrange": {
             "get": {
                 "tags": [
-                    "vlanrange"
+                    "Vlanrange"
                 ],
+                "operationId": "VlanrangeList",
                 "summary": "Retrieve vlanrange objects",
                 "description": "Returns a list of vlanrange objects matching the search criteria",
                 "parameters": [
@@ -3368,8 +3432,9 @@
             },
             "post": {
                 "tags": [
-                    "vlanrange"
+                    "Vlanrange"
                 ],
+                "operationId": "VlanrangeCreate",
                 "summary": "Create a vlanrange object",
                 "description": "Creates a new vlanrange object",
                 "parameters": [
@@ -3428,8 +3493,9 @@
         "/vlanrange/{reference}": {
             "get": {
                 "tags": [
-                    "vlanrange"
+                    "Vlanrange"
                 ],
+                "operationId": "VlanrangeRead",
                 "summary": "Get a specific vlanrange object",
                 "description": "Returns a specific vlanrange object by reference",
                 "parameters": [
@@ -3484,8 +3550,9 @@
             },
             "put": {
                 "tags": [
-                    "vlanrange"
+                    "Vlanrange"
                 ],
+                "operationId": "VlanrangeUpdate",
                 "summary": "Update a vlanrange object",
                 "description": "Updates a specific vlanrange object by reference",
                 "parameters": [
@@ -3552,8 +3619,9 @@
             },
             "delete": {
                 "tags": [
-                    "vlanrange"
+                    "Vlanrange"
                 ],
+                "operationId": "VlanrangeDelete",
                 "summary": "Delete a vlanrange object",
                 "description": "Deletes a specific vlanrange object by reference",
                 "parameters": [
@@ -3603,8 +3671,9 @@
         "/bulkhost": {
             "get": {
                 "tags": [
-                    "bulkhost"
+                    "Bulkhost"
                 ],
+                "operationId": "BulkhostList",
                 "summary": "Retrieve bulkhost objects",
                 "description": "Returns a list of bulkhost objects matching the search criteria",
                 "parameters": [
@@ -3665,8 +3734,9 @@
             },
             "post": {
                 "tags": [
-                    "bulkhost"
+                    "Bulkhost"
                 ],
+                "operationId": "BulkhostCreate",
                 "summary": "Create a bulkhost object",
                 "description": "Creates a new bulkhost object",
                 "parameters": [
@@ -3725,8 +3795,9 @@
         "/bulkhost/{reference}": {
             "get": {
                 "tags": [
-                    "bulkhost"
+                    "Bulkhost"
                 ],
+                "operationId": "BulkhostRead",
                 "summary": "Get a specific bulkhost object",
                 "description": "Returns a specific bulkhost object by reference",
                 "parameters": [
@@ -3781,8 +3852,9 @@
             },
             "put": {
                 "tags": [
-                    "bulkhost"
+                    "Bulkhost"
                 ],
+                "operationId": "BulkhostUpdate",
                 "summary": "Update a bulkhost object",
                 "description": "Updates a specific bulkhost object by reference",
                 "parameters": [
@@ -3849,8 +3921,9 @@
             },
             "delete": {
                 "tags": [
-                    "bulkhost"
+                    "Bulkhost"
                 ],
+                "operationId": "BulkhostDelete",
                 "summary": "Delete a bulkhost object",
                 "description": "Deletes a specific bulkhost object by reference",
                 "parameters": [
@@ -3891,8 +3964,9 @@
         "/bulkhostnametemplate": {
             "get": {
                 "tags": [
-                    "bulkhostnametemplate"
+                    "Bulkhostnametemplate"
                 ],
+                "operationId": "BulkhostnametemplateList",
                 "summary": "Retrieve bulkhostnametemplate objects",
                 "description": "Returns a list of bulkhostnametemplate objects matching the search criteria",
                 "parameters": [
@@ -3953,8 +4027,9 @@
             },
             "post": {
                 "tags": [
-                    "bulkhostnametemplate"
+                    "Bulkhostnametemplate"
                 ],
+                "operationId": "BulkhostnametemplateCreate",
                 "summary": "Create a bulkhostnametemplate object",
                 "description": "Creates a new bulkhostnametemplate object",
                 "parameters": [
@@ -4012,8 +4087,9 @@
         "/bulkhostnametemplate/{reference}": {
             "get": {
                 "tags": [
-                    "bulkhostnametemplate"
+                    "Bulkhostnametemplate"
                 ],
+                "operationId": "BulkhostnametemplateRead",
                 "summary": "Get a specific bulkhostnametemplate object",
                 "description": "Returns a specific bulkhostnametemplate object by reference",
                 "parameters": [
@@ -4068,8 +4144,9 @@
             },
             "put": {
                 "tags": [
-                    "bulkhostnametemplate"
+                    "Bulkhostnametemplate"
                 ],
+                "operationId": "BulkhostnametemplateUpdate",
                 "summary": "Update a bulkhostnametemplate object",
                 "description": "Updates a specific bulkhostnametemplate object by reference",
                 "parameters": [
@@ -4135,8 +4212,9 @@
             },
             "delete": {
                 "tags": [
-                    "bulkhostnametemplate"
+                    "Bulkhostnametemplate"
                 ],
+                "operationId": "BulkhostnametemplateDelete",
                 "summary": "Delete a bulkhostnametemplate object",
                 "description": "Deletes a specific bulkhostnametemplate object by reference",
                 "parameters": [
@@ -4177,8 +4255,9 @@
         "/discoverytask": {
             "get": {
                 "tags": [
-                    "discoverytask"
+                    "Discoverytask"
                 ],
+                "operationId": "DiscoverytaskList",
                 "summary": "Retrieve discoverytask objects",
                 "description": "Returns a list of discoverytask objects matching the search criteria",
                 "parameters": [
@@ -4241,8 +4320,9 @@
         "/discoverytask/{reference}": {
             "get": {
                 "tags": [
-                    "discoverytask"
+                    "Discoverytask"
                 ],
+                "operationId": "DiscoverytaskRead",
                 "summary": "Get a specific discoverytask object",
                 "description": "Returns a specific discoverytask object by reference",
                 "parameters": [
@@ -4297,8 +4377,9 @@
             },
             "put": {
                 "tags": [
-                    "discoverytask"
+                    "Discoverytask"
                 ],
+                "operationId": "DiscoverytaskUpdate",
                 "summary": "Update a discoverytask object",
                 "description": "Updates a specific discoverytask object by reference",
                 "parameters": [
@@ -4366,8 +4447,9 @@
         "/network_discovery": {
             "get": {
                 "tags": [
-                    "network_discovery"
+                    "NetworkDiscovery"
                 ],
+                "operationId": "NetworkDiscoveryList",
                 "summary": "Retrieve network_discovery objects",
                 "description": "Returns a list of network_discovery objects matching the search criteria",
                 "parameters": [
@@ -4430,8 +4512,9 @@
         "/network_discovery/{reference}": {
             "get": {
                 "tags": [
-                    "network_discovery"
+                    "NetworkDiscovery"
                 ],
+                "operationId": "NetworkDiscoveryRead",
                 "summary": "Get a specific network_discovery object",
                 "description": "Returns a specific network_discovery object by reference",
                 "parameters": [
@@ -4488,8 +4571,9 @@
         "/superhost": {
             "get": {
                 "tags": [
-                    "superhost"
+                    "Superhost"
                 ],
+                "operationId": "SuperhostList",
                 "summary": "Retrieve superhost objects",
                 "description": "Returns a list of superhost objects matching the search criteria",
                 "parameters": [
@@ -4550,8 +4634,9 @@
             },
             "post": {
                 "tags": [
-                    "superhost"
+                    "Superhost"
                 ],
+                "operationId": "SuperhostCreate",
                 "summary": "Create a superhost object",
                 "description": "Creates a new superhost object",
                 "parameters": [
@@ -4610,8 +4695,9 @@
         "/superhost/{reference}": {
             "get": {
                 "tags": [
-                    "superhost"
+                    "Superhost"
                 ],
+                "operationId": "SuperhostRead",
                 "summary": "Get a specific superhost object",
                 "description": "Returns a specific superhost object by reference",
                 "parameters": [
@@ -4666,8 +4752,9 @@
             },
             "put": {
                 "tags": [
-                    "superhost"
+                    "Superhost"
                 ],
+                "operationId": "SuperhostUpdate",
                 "summary": "Update a superhost object",
                 "description": "Updates a specific superhost object by reference",
                 "parameters": [
@@ -4734,8 +4821,9 @@
             },
             "delete": {
                 "tags": [
-                    "superhost"
+                    "Superhost"
                 ],
+                "operationId": "SuperhostDelete",
                 "summary": "Delete a superhost object",
                 "description": "Deletes a specific superhost object by reference",
                 "parameters": [
@@ -4776,8 +4864,9 @@
         "/superhostchild": {
             "get": {
                 "tags": [
-                    "superhostchild"
+                    "Superhostchild"
                 ],
+                "operationId": "SuperhostchildList",
                 "summary": "Retrieve superhostchild objects",
                 "description": "Returns a list of superhostchild objects matching the search criteria",
                 "parameters": [
@@ -4840,8 +4929,9 @@
         "/superhostchild/{reference}": {
             "get": {
                 "tags": [
-                    "superhostchild"
+                    "Superhostchild"
                 ],
+                "operationId": "SuperhostchildRead",
                 "summary": "Get a specific superhostchild object",
                 "description": "Returns a specific superhostchild object by reference",
                 "parameters": [
@@ -4898,8 +4988,9 @@
         "/hostnamerewritepolicy": {
             "get": {
                 "tags": [
-                    "hostnamerewritepolicy"
+                    "Hostnamerewritepolicy"
                 ],
+                "operationId": "HostnamerewritepolicyList",
                 "summary": "Retrieve hostnamerewritepolicy objects",
                 "description": "Returns a list of hostnamerewritepolicy objects matching the search criteria",
                 "parameters": [
@@ -4962,8 +5053,9 @@
         "/hostnamerewritepolicy/{reference}": {
             "get": {
                 "tags": [
-                    "hostnamerewritepolicy"
+                    "Hostnamerewritepolicy"
                 ],
+                "operationId": "HostnamerewritepolicyRead",
                 "summary": "Get a specific hostnamerewritepolicy object",
                 "description": "Returns a specific hostnamerewritepolicy object by reference",
                 "parameters": [
@@ -5018,8 +5110,9 @@
             },
             "put": {
                 "tags": [
-                    "hostnamerewritepolicy"
+                    "Hostnamerewritepolicy"
                 ],
+                "operationId": "HostnamerewritepolicyUpdate",
                 "summary": "Update a hostnamerewritepolicy object",
                 "description": "Updates a specific hostnamerewritepolicy object by reference",
                 "parameters": [
@@ -6105,25 +6198,6 @@
                     }
                 ]
             },
-            "CreateIpv4addressResponse": {
-                "oneOf": [
-                    {
-                        "description": "The response format to create __Ipv4address__ in object format.",
-                        "type": "object",
-                        "title": "CreateIpv4addressResponseAsObject",
-                        "properties": {
-                            "result": {
-                                "$ref": "#/components/schemas/Ipv4address"
-                            }
-                        }
-                    },
-                    {
-                        "description": "The response format to create __Ipv4address__.",
-                        "type": "string",
-                        "title": "CreateIpv4addressResponse"
-                    }
-                ]
-            },
             "GetIpv4addressResponse": {
                 "oneOf": [
                     {
@@ -6975,25 +7049,6 @@
                     }
                 ]
             },
-            "CreateIpv6addressResponse": {
-                "oneOf": [
-                    {
-                        "description": "The response format to create __Ipv6address__ in object format.",
-                        "type": "object",
-                        "title": "CreateIpv6addressResponseAsObject",
-                        "properties": {
-                            "result": {
-                                "$ref": "#/components/schemas/Ipv6address"
-                            }
-                        }
-                    },
-                    {
-                        "description": "The response format to create __Ipv6address__.",
-                        "type": "string",
-                        "title": "CreateIpv6addressResponse"
-                    }
-                ]
-            },
             "GetIpv6addressResponse": {
                 "oneOf": [
                     {
@@ -7392,6 +7447,7 @@
                     "lease_scavenge_time": {
                         "type": "integer",
                         "description": "An integer that specifies the period of time (in seconds) that frees and backs up leases remained in the database before they are automatically deleted. To disable lease scavenging, set the parameter to -1. The minimum positive value must be greater than 86400 seconds (1 day).",
+                        "format": "int64",
                         "example": 1
                     },
                     "logic_filter_rules": {
@@ -7451,10 +7507,11 @@
                         "oneOf": [
                             {
                                 "type": "string",
-                                "title": "network"
+                                "description": "network: The network address in IPv4 Address/CIDR format. For regular expression searches, only the IPv4 Address portion is supported. Searches for the CIDR portion is always an exact match. For example, both network containers 10.0.0.0/8 and 20.1.0.0/16 are matched by expression '.0' and only 20.1.0.0/16 is matched by '.0/16'."
                             },
                             {
                                 "type": "object",
+                                "description": "network: The network address in IPv4 Address/CIDR format. For regular expression searches, only the IPv4 Address portion is supported. Searches for the CIDR portion is always an exact match. For example, both network containers 10.0.0.0/8 and 20.1.0.0/16 are matched by expression '.0' and only 20.1.0.0/16 is matched by '.0/16'.",
                                 "properties": {
                                     "_object_function": {
                                         "type": "string"
@@ -7478,6 +7535,9 @@
                                 }
                             }
                         ]
+                    },
+                    "func_call": {
+                        "$ref": "#/components/schemas/FuncCall"
                     },
                     "network_container": {
                         "type": "string",
@@ -7800,6 +7860,43 @@
                         "items": {
                             "$ref": "#/components/schemas/NetworkZoneAssociations"
                         }
+                    }
+                }
+            },
+            "FuncCall": {
+                "type": "object",
+                "description": "Function Call attribute",
+                "required": [
+                    "attribute_name"
+                ],
+                "properties": {
+                    "attribute_name": {
+                        "type": "string",
+                        "description": "The attribute to be called."
+                    },
+                    "_object_function": {
+                        "type": "string",
+                        "description": "The function to be called."
+                    },
+                    "_parameters": {
+                        "type": "object",
+                        "description": "The parameters for the function."
+                    },
+                    "_result_field": {
+                        "type": "string",
+                        "description": "The result field of the function."
+                    },
+                    "_object": {
+                        "type": "string",
+                        "description": "The object to be called."
+                    },
+                    "_object_parameters": {
+                        "type": "object",
+                        "description": "The parameters for the object."
+                    },
+                    "_object_ref": {
+                        "type": "string",
+                        "description": "A WAPI object reference on which the function calls. Either _object or _object_ref must be set."
                     }
                 }
             },
@@ -8869,6 +8966,7 @@
                     "lease_scavenge_time": {
                         "type": "integer",
                         "description": "An integer that specifies the period of time (in seconds) that frees and backs up leases remained in the database before they are automatically deleted. To disable lease scavenging, set the parameter to -1. The minimum positive value must be greater than 86400 seconds (1 day).",
+                        "format": "int64",
                         "example": 1
                     },
                     "logic_filter_rules": {
@@ -8912,10 +9010,11 @@
                         "oneOf": [
                             {
                                 "type": "string",
-                                "title": "network"
+                                "description": "networkcontainer: The network address in IPv4 Address/CIDR format. For regular expression searches, only the IPv4 Address portion is supported. Searches for the CIDR portion is always an exact match. For example, both network containers 10.0.0.0/8 and 20.1.0.0/16 are matched by expression '.0' and only 20.1.0.0/16 is matched by '.0/16'."
                             },
                             {
                                 "type": "object",
+                                "description": "networkcontainer: The network address in IPv4 Address/CIDR format. For regular expression searches, only the IPv4 Address portion is supported. Searches for the CIDR portion is always an exact match. For example, both network containers 10.0.0.0/8 and 20.1.0.0/16 are matched by expression '.0' and only 20.1.0.0/16 is matched by '.0/16'.",
                                 "properties": {
                                     "_object_function": {
                                         "type": "string"
@@ -8939,6 +9038,9 @@
                                 }
                             }
                         ]
+                    },
+                    "func_call": {
+                        "$ref": "#/components/schemas/FuncCall"
                     },
                     "network_container": {
                         "type": "string",
@@ -10149,6 +10251,7 @@
                     "lease_scavenge_time": {
                         "type": "integer",
                         "description": "An integer that specifies the period of time (in seconds) that frees and backs up leases remained in the database before they are automatically deleted. To disable lease scavenging, set the parameter to -1. The minimum positive value must be greater than 86400 seconds (1 day).",
+                        "format": "int64",
                         "example": 1
                     },
                     "logic_filter_rules": {
@@ -14022,25 +14125,6 @@
                     }
                 ]
             },
-            "CreateIpamStatisticsResponse": {
-                "oneOf": [
-                    {
-                        "description": "The response format to create __IpamStatistics__ in object format.",
-                        "type": "object",
-                        "title": "CreateIpamStatisticsResponseAsObject",
-                        "properties": {
-                            "result": {
-                                "$ref": "#/components/schemas/IpamStatistics"
-                            }
-                        }
-                    },
-                    {
-                        "description": "The response format to create __IpamStatistics__.",
-                        "type": "string",
-                        "title": "CreateIpamStatisticsResponse"
-                    }
-                ]
-            },
             "GetIpamStatisticsResponse": {
                 "oneOf": [
                     {
@@ -15250,25 +15334,6 @@
                     }
                 ]
             },
-            "CreateDiscoverytaskResponse": {
-                "oneOf": [
-                    {
-                        "description": "The response format to create __Discoverytask__ in object format.",
-                        "type": "object",
-                        "title": "CreateDiscoverytaskResponseAsObject",
-                        "properties": {
-                            "result": {
-                                "$ref": "#/components/schemas/Discoverytask"
-                            }
-                        }
-                    },
-                    {
-                        "description": "The response format to create __Discoverytask__.",
-                        "type": "string",
-                        "title": "CreateDiscoverytaskResponse"
-                    }
-                ]
-            },
             "GetDiscoverytaskResponse": {
                 "oneOf": [
                     {
@@ -15338,25 +15403,6 @@
                                 }
                             }
                         }
-                    }
-                ]
-            },
-            "CreateNetworkDiscoveryResponse": {
-                "oneOf": [
-                    {
-                        "description": "The response format to create __NetworkDiscovery__ in object format.",
-                        "type": "object",
-                        "title": "CreateNetworkDiscoveryResponseAsObject",
-                        "properties": {
-                            "result": {
-                                "$ref": "#/components/schemas/NetworkDiscovery"
-                            }
-                        }
-                    },
-                    {
-                        "description": "The response format to create __NetworkDiscovery__.",
-                        "type": "string",
-                        "title": "CreateNetworkDiscoveryResponse"
                     }
                 ]
             },
@@ -15652,25 +15698,6 @@
                     }
                 ]
             },
-            "CreateSuperhostchildResponse": {
-                "oneOf": [
-                    {
-                        "description": "The response format to create __Superhostchild__ in object format.",
-                        "type": "object",
-                        "title": "CreateSuperhostchildResponseAsObject",
-                        "properties": {
-                            "result": {
-                                "$ref": "#/components/schemas/Superhostchild"
-                            }
-                        }
-                    },
-                    {
-                        "description": "The response format to create __Superhostchild__.",
-                        "type": "string",
-                        "title": "CreateSuperhostchildResponse"
-                    }
-                ]
-            },
             "GetSuperhostchildResponse": {
                 "oneOf": [
                     {
@@ -15767,25 +15794,6 @@
                                 }
                             }
                         }
-                    }
-                ]
-            },
-            "CreateHostnamerewritepolicyResponse": {
-                "oneOf": [
-                    {
-                        "description": "The response format to create __Hostnamerewritepolicy__ in object format.",
-                        "type": "object",
-                        "title": "CreateHostnamerewritepolicyResponseAsObject",
-                        "properties": {
-                            "result": {
-                                "$ref": "#/components/schemas/Hostnamerewritepolicy"
-                            }
-                        }
-                    },
-                    {
-                        "description": "The response format to create __Hostnamerewritepolicy__.",
-                        "type": "string",
-                        "title": "CreateHostnamerewritepolicyResponse"
                     }
                 ]
             },
