@@ -8,6 +8,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  workflows: write  # Add this permission to allow modifying workflow files
 
 jobs:
   updateSwagger:
@@ -46,6 +47,9 @@ jobs:
           sed -i "s|href=\"index|href=\"dist/index|g" index.html
           # Update current release
           echo ${{ steps.swagger-ui.outputs.release_tag }} > swagger-ui.version
+          
+          # Exclude the workflow file itself to avoid circular updates
+          git checkout -- .github/workflows/update-swagger.yml || true
       - name: Configure Git
         run: |
           git config --global user.name "GitHub Action"
