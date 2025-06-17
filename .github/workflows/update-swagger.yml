@@ -31,6 +31,8 @@ jobs:
         env:
           RELEASE_TAG: ${{ steps.swagger-ui.outputs.release_tag }}
           SWAGGER_YAML: "swagger.yaml"
+          BASE_URL: "`${basePath}/dns.json`"
+          
         run: |
           # Delete the dist directory and index.html
           rm -fr dist index.html
@@ -42,10 +44,15 @@ jobs:
           # Move index.html to the root
           mv dist/index.html .
           # Fix references in dist/swagger-initializer and index.html
-          sed -i "s|https://petstore.swagger.io/v2/swagger.json|$SWAGGER_YAML|g" dist/swagger-initializer.js
+          sed -i "s|$BASE_URL|$SWAGGER_YAML|g" dist/swagger-initializer.js
           sed -i "s|href=\"./|href=\"dist/|g" index.html
           sed -i "s|src=\"./|src=\"dist/|g" index.html
           sed -i "s|href=\"index|href=\"dist/index|g" index.html
+
+          # Update the Url and Urls in swagger-initializer.js
+          sed -i "s|url: |url: \"$BASE_URL\",|g" dist/swagger-initializer.js
+          
+          sed -i "s|urls: |urls: [\"$BASE_URL\"],|g" dist/swagger-initializer.js
           # Update current release
           echo ${{ steps.swagger-ui.outputs.release_tag }} > swagger-ui.version
       - name: Create Pull Request
