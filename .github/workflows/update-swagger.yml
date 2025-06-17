@@ -4,32 +4,33 @@ on:
     - cron:  '0 10 * * *'
   workflow_dispatch:
 
-# Explicitly grant permissions needed by this workflow
-permissions:
-  contents: write
-  pull-requests: write
-  workflows: write  # Add this permission to allow modifying workflow files
-
 jobs:
   updateSwagger:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          # Use default GITHUB_TOKEN
-          fetch-depth: 0
+      - name: Check for Version File
+        id: check-file
+        run: |
+          if [ ! -f swagger-ui.version ]; then
+            echo "exists=false" >> $GITHUB_OUTPUT
+            echo "none" > swagger-ui.version
+          else
+            echo "exists=true" >> $GITHUB_OUTPUT
+          fi
+          
       - name: Get Latest Swagger UI Release
         id: swagger-ui
         run: |
           release_tag=$(curl -sL https://api.github.com/repos/swagger-api/swagger-ui/releases/latest | jq -r ".tag_name")
           echo "release_tag=$release_tag" >> $GITHUB_OUTPUT
-          current_tag=$(<swagger-ui.version)
+          current_tag=$(cat swagger-ui.version)
           echo "current_tag=$current_tag" >> $GITHUB_OUTPUT
       - name: Update Swagger UI
         if: steps.swagger-ui.outputs.current_tag != steps.swagger-ui.outputs.release_tag
         env:
           RELEASE_TAG: ${{ steps.swagger-ui.outputs.release_tag }}
-          #SWAGGER_YAML: "swagger.yaml"
+          SWAGGER_YAML: "swagger.yaml"
         run: |
           # Delete the dist directory and index.html
           rm -fr dist index.html
@@ -41,24 +42,15 @@ jobs:
           # Move index.html to the root
           mv dist/index.html .
           # Fix references in dist/swagger-initializer and index.html
-          #sed -i "s|https://petstore.swagger.io/v2/swagger.json|$SWAGGER_YAML|g" dist/swagger-initializer.js
+          sed -i "s|https://petstore.swagger.io/v2/swagger.json|$SWAGGER_YAML|g" dist/swagger-initializer.js
           sed -i "s|href=\"./|href=\"dist/|g" index.html
           sed -i "s|src=\"./|src=\"dist/|g" index.html
           sed -i "s|href=\"index|href=\"dist/index|g" index.html
           # Update current release
           echo ${{ steps.swagger-ui.outputs.release_tag }} > swagger-ui.version
-          
-          # Exclude the workflow file itself to avoid circular updates
-          git checkout -- .github/workflows/update-swagger.yml || true
-      - name: Configure Git
-        run: |
-          git config --global user.name "GitHub Action"
-          git config --global user.email "action@github.com"
-      
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7
         with:
-          token: ${{ github.token }}
           commit-message: Update swagger-ui to ${{ steps.swagger-ui.outputs.release_tag }}
           title: Update SwaggerUI to ${{ steps.swagger-ui.outputs.release_tag }}
           body: |
